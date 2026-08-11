@@ -1,0 +1,55 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "Central de Ajuda Leavo AI",
+  "colors": {
+    "primary": "#0D9373",
+    "light": "#07C983",
+    "dark": "#0D9373"
+  },
+  "favicon": "/favicon.svg",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Central de Ajuda",
+        "groups": [
+          {
+            "group": "Início",
+            "pages": ["introduction"]
+          },
+          {
+            "group": "Plataforma",
+            "pages": [
+              "quickstart",
+              "account-setup",
+              "concepts/overview",
+              "concepts/workspace",
+              "concepts/members-roles"
+            ]
+          },
+          {
+            "group": "Comercial",
+            "pages": [
+              "guides/dashboard",
+              "guides/managing-data",
+              "guides/notifications",
+              "integrations/overview",
+              "guides/billing"
+            ]
+          },
+          {
+            "group": "Conta",
+            "pages": [
+              "integrations/webhooks",
+              "integrations/sso"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  }
+}

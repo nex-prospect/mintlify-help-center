@@ -1,0 +1,53 @@
+---
+title: "Agentes de IA"
+sidebarTitle: "Agentes de IA"
+description: "Crie e configure os assistentes de inteligência artificial que interagem com seus leads"
+icon: "robot"
+---
+
+A seção Agentes é onde você cria, configura e testa os assistentes de inteligência artificial que interagem com seus leads. Cada agente tem personalidade, instruções, horários de atendimento e ferramentas próprias.
+
+## Tela Inicial dos Agentes
+
+A tela exibe o número de agentes ativos e o limite do plano, um modelo pronto **"SDR de IA"** para começar rapidamente, e a lista de agentes já criados com filtros por criador e status.
+
+## Criar um Novo Agente
+
+<Tabs>
+  <Tab title="Formulário Simples">
+    Clique em **"Adicionar Agente"** para abrir um modal rápido com:
+
+    - **Nome** — identificação interna do agente.
+    - **Descrição** — resumo do papel do agente.
+    - **Definir como assistente padrão** — toggle que torna este agente o padrão para novos canais e cadências.
+  </Tab>
+  <Tab title="Wizard Guiado (10 Etapas)">
+    O wizard percorre 10 etapas e gera um agente completo com base nas informações fornecidas. A qualquer momento é possível clicar em **"Pular por agora"** para sair e retomar depois como rascunho.
+
+    - **Etapa 1 — Identificação:** nome da empresa, nome do assistente, descrição da empresa, segmento e regiões de atendimento.
+    - **Etapa 2 — Produtos e Ofertas:** o que a empresa vende, diferenciais, perfil do cliente ideal e política de preços.
+    - **Etapa 3 — Personalidade:** estilo de comunicação (formal, informal, técnico, simpático, direto), uso de emojis e expressões da marca.
+    - **Etapa 4 — Qualificação do Lead:** critérios de ICP, informações obrigatórias a coletar, perguntas específicas e desqualificadores.
+    - **Etapa 5 — Agendamento de Reunião:** nome e cargo do responsável pela reunião, objetivo e formato (online/presencial).
+    - **Etapa 6 — Perguntas Frequentes:** pares de pergunta e resposta para o assistente memorizar.
+    - **Etapa 7 — Objeções:** tratamento de objeções comuns com sugestões prontas (ex.: "Está caro", "Já tenho fornecedor").
+    - **Etapas 8 a 10 — Finalização** e revisão do agente criado.
+  </Tab>
+</Tabs>
+
+## Abas de Configuração do Agente
+
+<AccordionGroup>
+  <Accordion title="Perfil">
+    - **Nome do Assistente no Sistema** — identificação interna.
+    - **Nome do assistente** — como o agente se apresenta ao lead.
+    - **Personalidade** — descrição do tom e estilo do agente.
+    - **Mensagem de boas-vindas** — primeira mensagem enviada ao lead. Suporta variáveis como `{{LEAD_NAME}}`, `{{LEAD_COMPANY}}` e `{{GREETING}}` (saudação por horário).
+    - **Dados da empresa representada** — nome e descrição da empresa que o agente representa.
+  </Accordion>
+
+  <Accordion title="Treinamento">
+    - **Instruções** — campo principal que define como o agente deve se comportar. Suporta variáveis como `lead.nome`, `lead.empresa`, `lead.cargo`, `data_atual` e `empresa`.
+    - **Melhorar com IA** — botão que reescreve e aprimora as instruções automaticamente.
+  </Accordion>
+</AccordionGroup>

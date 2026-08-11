@@ -1,0 +1,70 @@
+---
+title: "Integrações"
+sidebarTitle: "Integrações"
+description: "Conecte a Leavo AI a CRMs, Google Agenda, webhooks e sistemas externos"
+icon: "plug"
+---
+
+A seção Integrações reúne todas as conexões externas disponíveis na plataforma Leavo AI, organizadas em categorias para facilitar a navegação.
+
+## Categorias de Integrações
+
+Use a barra de filtros no topo para navegar entre as categorias:
+
+- **Todos** — exibe todas as integrações disponíveis.
+- **Principais** — integrações de uso mais frequente.
+- **Agenda** — ferramentas de calendário.
+- **CRMs** — sistemas de gestão de relacionamento com o cliente.
+- **Ferramentas** — utilitários e configurações avançadas.
+
+## Google Agenda
+
+Sincroniza reuniões e permite que o assistente de IA realize agendamentos automáticos na agenda do responsável.
+
+- Suporta até **10 contas Google** conectadas simultaneamente.
+- Clique em **"Conectar com Google"** e siga o fluxo de autenticação OAuth.
+- Após conectar, o agente pode propor e confirmar horários disponíveis diretamente nas conversas.
+
+## Webhooks
+
+Os webhooks permitem que a Leavo AI se comunique com sistemas externos. A página possui duas abas:
+
+<Tabs>
+  <Tab title="Entrada (Receber Leads)">
+    Use webhooks de entrada para receber leads de fontes externas como formulários de site ou CRMs.
+
+    - Cada webhook gera uma **URL única** para receber requisições POST.
+    - **"Editar Mapeamento"** — configura como os campos do payload recebido são mapeados para os campos de lead da plataforma.
+    - **"Pipeline de destino"** — define se um negócio é criado automaticamente em uma pipeline ao receber o lead.
+  </Tab>
+  <Tab title="Saída (Enviar Eventos)">
+    Use webhooks de saída para notificar sistemas externos sobre eventos ocorridos na plataforma.
+
+    - Cada webhook de saída possui uma URL de destino, um evento gatilho (ex.: Mudança de Status) e um botão **"Testar"**.
+    - O campo **"Chamadas"** exibe quantas vezes o webhook foi disparado.
+  </Tab>
+</Tabs>
+
+## Leavo API
+
+Gere e gerencie chaves de API para integrar a Leavo AI com sistemas próprios.
+
+- Clique em **"Nova Chave"** para criar uma chave de API.
+- <Warning>
+    A chave completa só é exibida **uma única vez**, no momento da criação. Copie e armazene com segurança.
+  </Warning>
+- Cada chave exibe nome, data de criação e data de expiração.
+
+## CRMs Disponíveis
+
+A plataforma possui integrações nativas com os seguintes CRMs:
+
+<CardGroup cols={2}>
+  <Card title="RD Station" icon="chart-bar">
+    Integração nativa com o RD Station para sincronizar leads e oportunidades.
+  </Card>
+
+  <Card title="Pipedrive" icon="filter">
+    Integração nativa com o Pipedrive para gerenciamento de pipeline de vendas.
+  </Card>
+</CardGroup>

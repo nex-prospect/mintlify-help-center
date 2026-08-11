@@ -1,0 +1,59 @@
+---
+title: "Conversas"
+sidebarTitle: "Conversas"
+description: "Gerencie todas as trocas de mensagens entre leads e agentes de IA"
+icon: "messages"
+---
+
+A seção Conversas centraliza todas as trocas de mensagens entre os leads e os agentes de IA ou membros do time. É aqui que o atendimento acontece e pode ser monitorado ou intervido manualmente.
+
+## Lista de Conversas
+
+O painel lateral esquerdo lista todas as conversas disponíveis. Recursos disponíveis na lista:
+
+- **Campo de busca** — localiza conversas pelo nome do lead ou trecho de mensagem.
+- **Filtros** — permite segmentar por Status, Tags, Canal, Departamento e Responsável.
+
+Cada item da lista mostra o nome do lead, a última mensagem enviada ou recebida, a etiqueta de status atual (ex.: Proposta Enviada, Ganho, Sem resultado) e a data da última interação.
+
+## Tela de Conversa
+
+Ao clicar em uma conversa, o histórico completo de mensagens é exibido na área central. Elementos presentes:
+
+- **Histórico de mensagens** — exibe todas as mensagens trocadas em ordem cronológica.
+- **Indicador "IA respondendo automaticamente"** — aparece quando a IA está ativa para aquele atendimento.
+- **Seletor de canal** — permite escolher por qual canal a próxima mensagem manual será enviada.
+- **Campo de mensagem** — campo de digitação para envio manual. Fica desativado enquanto a IA está ativa.
+
+## Controles no Topo da Conversa
+
+No cabeçalho de cada conversa há três controles principais:
+
+<AccordionGroup>
+  <Accordion title="Toggle IA Ativa / Desativada">
+    Ativa ou pausa a IA para aquele atendimento específico, sem afetar outros leads.
+  </Accordion>
+
+  <Accordion title="Limpar Sessão">
+    Apaga o contexto da sessão atual da IA, fazendo com que ela "esqueça" o histórico recente e inicie uma nova sessão.
+  </Accordion>
+
+  <Accordion title="Menu de ações (ícone ...)">
+    Abre um menu com as seguintes opções:
+
+    - **Ver lead** — abre o painel lateral com os dados completos do lead.
+    - **Agendar reunião** — cria um agendamento vinculado ao lead diretamente da conversa.
+    - **Trocar etiqueta** — aplica ou remove uma tag na conversa.
+    - **Trocar status** — move o lead para outro status no funil.
+    - **Excluir** — remove a conversa permanentemente.
+  </Accordion>
+</AccordionGroup>
+
+## Painel Lateral "Detalhes do Lead"
+
+A opção **"Ver lead"** no menu de ações abre um painel deslizante com as seguintes informações:
+
+- **Contato** — nome, telefone e e-mail do lead.
+- **Atendimento** — cadência vinculada, data de criação do lead e status da sessão (ativa ou inativa).
+- **Tags** — tags aplicadas ao lead, com opção de adicionar novas.
+- **Resumo da conversa** — botão para gerar um resumo automático via IA com base nas mensagens trocadas.
