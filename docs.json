@@ -3,12 +3,30 @@
   "theme": "mint",
   "name": "Central de Ajuda Leavo AI",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373"
+    "primary": "#F04438",
+    "light": "#F97066",
+    "dark": "#D92D20"
   },
   "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
+  },
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "API Status",
+          "href": "https://status.leavo.ai",
+          "icon": "signal"
+        },
+        {
+          "anchor": "Suporte",
+          "href": "mailto:suporte@leavo.ai",
+          "icon": "envelope"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Central de Ajuda",
@@ -48,8 +66,29 @@
       }
     ]
   },
-  "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+  "navbar": {
+    "links": [
+      {
+        "label": "Suporte",
+        "href": "mailto:suporte@leavo.ai"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard",
+      "href": "https://app.leavo.ai"
+    }
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://www.linkedin.com/company/leavoai"
+    }
+  },
+  "feedback": {
+    "thumbsRating": true,
+    "suggestEdit": true
+  },
+  "search": {
+    "prompt": "Buscar na central de ajuda..."
   }
 }
