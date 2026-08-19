@@ -42,7 +42,12 @@
               "account-setup",
               "concepts/overview",
               "concepts/workspace",
-              "concepts/members-roles"
+              {
+                "group": "Canais",
+                "pages": [
+                  "concepts/members-roles"
+                ]
+              }
             ]
           },
           {
