@@ -1,0 +1,102 @@
+---
+title: "Como usar Arquivos na base de conhecimento"
+sidebarTitle: "Usar Arquivos"
+description: "Faça upload de materiais que o agente pode enviar diretamente aos leads."
+icon: "paperclip"
+---
+
+A opção **Arquivos** permite fazer upload de documentos, imagens e planilhas que o agente poderá **enviar diretamente para os leads** durante uma conversa. Cada arquivo recebe uma URL única que você cola no prompt do agente, ensinando-o quando e como enviar aquele material.
+
+<Tip>
+  **Diferença importante:** enquanto "Adicionar arquivos" serve para que o agente *leia e consulte* o conteúdo de um documento, a opção **Arquivos** serve para que o agente *envie o arquivo completo* ao lead — como um catálogo em PDF, uma imagem ou uma planilha.
+</Tip>
+
+---
+
+## Para que serve?
+
+Use essa funcionalidade quando quiser que o agente envie materiais prontos aos leads em situações específicas. Exemplos:
+
+- Enviar um **catálogo de produtos em PDF** quando o lead pedir mais informações.
+- Enviar uma **tabela de preços em planilha** ao lead que estiver comparando opções.
+- Enviar uma **imagem de apresentação** ou banner da empresa.
+- Enviar um **contrato ou proposta comercial** padrão.
+
+---
+
+## Passo a passo
+
+### 1. Acesse a seção de Conhecimento
+
+No menu lateral esquerdo, clique em **Conhecimento**.
+
+---
+
+### 2. Abra a opção Arquivos
+
+No canto superior direito, clique na seta ao lado do botão **+ Adicionar** para abrir o menu dropdown.
+
+Selecione **Arquivos**.
+
+---
+
+### 3. Clique em "Enviar Arquivos"
+
+Uma janela será exibida com a lista de arquivos já enviados (se houver). Clique no botão **Enviar Arquivos** para fazer upload de um novo arquivo.
+
+Selecione o arquivo no seu computador e aguarde o upload ser concluído. O arquivo aparecerá na lista com as informações de nome, tipo e tamanho.
+
+---
+
+### 4. Copie a URL do arquivo
+
+Na linha do arquivo enviado, clique no ícone de **copiar** (📋). A URL pública do arquivo será copiada automaticamente para a sua área de transferência.
+
+Guarde essa URL — você vai precisar dela no próximo passo.
+
+---
+
+### 5. Cole a URL no prompt do agente
+
+Acesse as configurações do seu agente em **Agentes** e abra o campo de **Prompt** ou **Treinamento**.
+
+Instrua o agente sobre quando ele deve enviar o arquivo, usando a URL copiada. Exemplo:
+
+```
+Quando o lead pedir o catálogo de produtos, envie o link abaixo:
+https://seulink.com/catalogo-2024.pdf
+```
+
+Dessa forma, sempre que um lead pedir o catálogo, o agente enviará o link direto para o arquivo.
+
+---
+
+## Ações disponíveis para cada arquivo
+
+Na lista de arquivos, cada item possui três ações:
+
+- **⬇ Baixar** — faz o download do arquivo para o seu computador.
+- **📋 Copiar URL** — copia o link público do arquivo para usar no prompt do agente.
+- **🗑 Excluir** — remove o arquivo permanentemente da plataforma.
+
+---
+
+## Dúvidas frequentes
+
+<AccordionGroup>
+  <Accordion title="Quais tipos de arquivo posso enviar?">
+    PDFs, imagens (JPEG, PNG), planilhas e outros formatos de documento comuns são suportados.
+  </Accordion>
+
+  <Accordion title="O lead receberá o arquivo diretamente ou apenas o link?">
+    O arquivo é enviado **diretamente na conversa** — sem precisar acessar nenhum link externo. Se for uma imagem, ela aparece como foto na conversa. Se for um PDF, aparece como documento para abrir ali mesmo. O lead recebe o arquivo de forma nativa, como se você tivesse enviado manualmente.
+  </Accordion>
+
+  <Accordion title="Se eu excluir o arquivo, o link para de funcionar?">
+    Sim. Ao excluir um arquivo, a URL deixa de funcionar. Certifique-se de atualizar o prompt do agente caso precise trocar ou remover um arquivo.
+  </Accordion>
+
+  <Accordion title="Posso usar o mesmo arquivo em vários agentes?">
+    Sim! A URL gerada é pública e pode ser colada no prompt de quantos agentes quiser.
+  </Accordion>
+</AccordionGroup>

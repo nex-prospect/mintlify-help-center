@@ -1,0 +1,77 @@
+---
+title: "Agentes — Configurações"
+sidebarTitle: "Configurações"
+description: "Controle o comportamento técnico do agente: resposta, segmentação, horários e voz."
+icon: "gear"
+---
+
+A aba **Configurações** controla o comportamento técnico do agente: resposta, segmentação de mensagens, horários de atendimento, histórico e voz.
+
+**Para acessar:** Agentes → selecione um agente → aba Configurações
+
+---
+
+## Como ajustar a temperatura das respostas
+
+Na seção **Comportamento do Modelo**, mova o slider **Temperatura** entre **determinístico** e **criativo**:
+
+- Valores baixos (próximos a 0.2) — respostas mais previsíveis e consistentes.
+- Valores altos (próximos a 0.8) — respostas mais variadas e criativas.
+
+---
+
+## Como configurar o tempo de espera antes de responder (Debounce)
+
+Mova o slider **Tempo de Espera (Debounce)** para definir quantos segundos o agente aguarda antes de responder. Isso permite agrupar várias mensagens enviadas em sequência pelo lead em uma única resposta — evitando respostas fragmentadas.
+
+---
+
+## Como fazer o agente aguardar a cadência antes de responder
+
+Ative o toggle **Aguardar Cadência**. Quando ativado, o agente espera o primeiro disparo da cadência antes de responder às mensagens do lead.
+
+---
+
+## Como configurar a segmentação de mensagens longas
+
+Na seção **Configurações de Segmentação**, ajuste:
+
+- **Limite de caracteres por segmento** — número máximo de caracteres por mensagem no WhatsApp. Respostas longas são divididas automaticamente em partes.
+- **Tamanho mínimo do segmento** — número mínimo de caracteres para que um trecho seja enviado como segmento separado.
+
+---
+
+## Como configurar os horários de atendimento
+
+1. Na seção **Horários de Atendimento**, ative o toggle ao lado de cada dia da semana em que o agente deve responder.
+2. Para cada dia ativo, defina o **horário de início** e o **horário de término**.
+3. Use o botão **Copiar de seg** para replicar o horário da segunda-feira para todos os dias ativos.
+4. Ajuste o **fuso horário** conforme necessário (padrão: `America/Sao_Paulo`).
+
+Fora do intervalo configurado, o agente não envia mensagens automaticamente.
+
+---
+
+## Como ajustar o histórico de mensagens
+
+Mova o slider **Histórico de Mensagens** para definir quantas mensagens ficam visíveis na aba **Conversas**. O padrão recomendado é `50`. Valores mais altos aumentam o volume exibido, mas podem causar lentidão.
+
+---
+
+## Como configurar a voz do agente (ElevenLabs)
+
+Na seção **Integrações → Voz do Agente**:
+
+1. Selecione o **Modelo ElevenLabs** — determina a qualidade e velocidade da geração de áudio.
+2. Selecione a **Voz** — clique no botão de áudio para ouvir uma prévia antes de salvar.
+
+<Note>
+  A ativação da ferramenta de áudio é feita em **Integrações → Ferramentas → ElevenLabs**. Aqui você configura apenas o modelo e a voz para este agente específico. Se nenhuma voz for selecionada, será usada a voz padrão da conta.
+</Note>
+
+---
+
+## Como salvar as alterações
+
+- Clique em **Salvar Alterações** para confirmar manualmente.
+- Ou ative **Salvar automaticamente** para salvar em tempo real conforme você edita.

@@ -1,0 +1,137 @@
+---
+title: "Cadências — Criar uma Cadência em Branco"
+sidebarTitle: "Criar uma Cadência em Branco"
+description: "O assistente de 8 etapas para criar uma cadência do zero."
+icon: "plus"
+---
+
+**Para acessar:** Cadências → **+ Nova Cadência** → **Cadência em branco**
+
+A criação de uma cadência em branco é guiada por um assistente de 8 etapas. Navegue entre elas com os botões **Voltar** e **Continuar** na parte inferior. Algumas etapas possuem o botão **Pular**, que permite avançar sem preencher os campos opcionais.
+
+---
+
+## Etapa 1 — Identificação
+
+Defina o nome e a descrição da cadência.
+
+- **Nome da cadência** *(obrigatório)* — nome interno, não visível para os leads. Máximo de 100 caracteres.
+- **Descrição** *(opcional)* — texto de referência para a equipe. Máximo de 500 caracteres.
+
+Clique em **Continuar** para avançar.
+
+---
+
+## Etapa 2 — Agente
+
+Selecione o agente de IA que responderá aos leads durante a cadência.
+
+- Os agentes disponíveis são exibidos em um grid. Clique no agente desejado para vinculá-lo.
+- **Permitir respostas automáticas (IA)** — toggle ativado por padrão. Controla o comportamento da IA após o disparo:
+  - **Ativado** — após o lead interagir com a primeira mensagem enviada, o agente passa a responder automaticamente.
+  - **Desativado** — a cadência realiza o disparo normalmente, mas a sessão do lead é pausada logo em seguida, sem respostas automáticas da IA.
+
+Esta etapa é opcional — clique em **Pular** para continuar sem vincular um agente, ou em **Continuar** após selecionar um.
+
+---
+
+## Etapa 3 — Critérios de entrada
+
+Define quais leads podem entrar na cadência.
+
+- **Tags obrigatórias** — o lead precisa ter exatamente as tags selecionadas. Qualquer tag adicional o impede de entrar. Clique nas tags para selecioná-las.
+- **Status aceitos** — clique nos status desejados para permitir a entrada de leads com aquele status.
+- Um contador em tempo real exibe quantos leads correspondem aos critérios configurados.
+
+Esta etapa é opcional — clique em **Pular** para aceitar qualquer lead, ou em **Continuar** após configurar os filtros.
+
+---
+
+## Etapa 4 — Mensagens
+
+Configure os passos da cadência e as mensagens de cada passo.
+
+### O que é um passo?
+
+Cada passo é um momento da cadência. O intervalo de cada passo é contado em relação ao passo anterior (ou ao início da cadência, no primeiro passo).
+
+### Configurar um passo
+
+Cada passo exibe:
+
+- **Nome do passo** — nome de referência (padrão: "Passo 1"). Clique para editar.
+- **Intervalo** — tempo de espera antes de enviar as mensagens deste passo (padrão: Imediatamente).
+- **Ícone de lixeira** — remove o passo.
+
+### Adicionar mensagens ao passo
+
+Dentro de cada passo, clique em **+ Adicionar mensagem** para incluir uma nova mensagem. Cada mensagem tem:
+
+- **Tipo** — selecione o formato: Texto, Mídia, Áudio, Template Meta ou Mensagem IA.
+- **Atraso (segundos)** — tempo adicional de espera antes de enviar esta mensagem específica (padrão: 0).
+- **Conteúdo** — corpo da mensagem. Use o botão **`{x}`** para inserir variáveis dinâmicas.
+
+### Adicionar mais passos
+
+Clique em **+ Adicionar passo** (no final da lista) para incluir um novo passo à cadência.
+
+É necessário preencher o conteúdo de pelo menos uma mensagem para avançar. Clique em **Continuar**.
+
+---
+
+## Etapa 5 — Canais
+
+Selecione por quais canais WhatsApp as mensagens serão enviadas: todos os canais conectados ou apenas canais específicos.
+
+Clique em **Continuar** para avançar.
+
+---
+
+## Etapa 6 — Janela de envio
+
+Define quando as mensagens serão disparadas.
+
+- **Dias da semana** — selecione os dias ativos. Padrão: segunda a sexta.
+- **Horário** — configure o horário de início e término para cada dia ativo. Padrão: 09:00 às 18:00.
+- **Fuso horário** — selecione o fuso de referência. Padrão: America/Sao_Paulo.
+
+<Note>
+  As mensagens só serão disparadas dentro da janela configurada. Feriados não são considerados automaticamente — revise a janela em datas especiais.
+</Note>
+
+Clique em **Continuar** para avançar.
+
+---
+
+## Etapa 7 — Limite de envio
+
+Controla quantos leads entram na cadência por dia ou hora, evitando volumes altos que possam causar banimento no WhatsApp.
+
+- **Habilitar limite** — toggle ativado por padrão.
+- **Tipo** — define a frequência do controle: **Por dia** (padrão) ou **Por hora**.
+- **Máximo de leads** — número máximo de leads por período (padrão: 20). Use `0` para ilimitado.
+
+Esta etapa é opcional — clique em **Pular** para não definir limite, ou em **Continuar** após configurar.
+
+---
+
+## Etapa 8 — Revisão
+
+Exibe um resumo de todas as configurações da cadência antes de finalizar:
+
+- **Identificação** — nome da cadência.
+- **Agente** — agente vinculado e status da IA.
+- **Critérios de entrada** — tags e status configurados.
+- **Mensagens** — número de passos e total de mensagens.
+- **Janela de envio** — fuso horário e dias ativos.
+- **Limite de envio** — limite configurado por dia ou hora.
+
+Cada bloco tem um botão **Editar** para voltar diretamente àquela etapa e ajustar as configurações.
+
+### Finalizar a cadência
+
+Ao fim da revisão, escolha uma das opções:
+
+- **Salvar como rascunho** — salva a cadência sem ativá-la. Ela ficará com status Inativa até ser ativada manualmente.
+- **Agendar início** — define uma data e hora específicas para a cadência entrar em atividade automaticamente.
+- **Ativar agora** — salva e ativa a cadência imediatamente.

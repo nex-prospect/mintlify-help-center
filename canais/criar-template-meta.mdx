@@ -1,0 +1,103 @@
+---
+title: "Como criar um Template Oficial da Meta"
+sidebarTitle: "Criar Template Oficial da Meta"
+description: "Crie mensagens pré-aprovadas pelo WhatsApp/Meta para usar em cadências e campanhas."
+icon: "message-check"
+---
+
+<Tip>
+  🎥 **Prefere assistir?** Veja o tutorial em vídeo: [Como criar Templates Oficiais da Meta na Leavo](https://www.tella.tv/video/como-criar-templates-oficiais-da-meta-na-leavo-1-fhsb)
+</Tip>
+
+Templates são mensagens pré-aprovadas pelo WhatsApp/Meta que permitem iniciar conversas ativas com seus leads. Eles são obrigatórios para disparos em **cadências** com canal de API Oficial.
+
+<Warning>
+  Após criar, o template ficará com status **PENDENTE** até que o WhatsApp/Meta aprove. Isso pode levar de **24 a 48 horas**. Somente templates **APROVADOS** podem ser usados em cadências.
+</Warning>
+
+---
+
+## Passo a passo
+
+### 1. Acesse a seção de Canais
+
+No menu lateral esquerdo, clique em **Canais**.
+
+---
+
+### 2. Abra os Templates do canal
+
+No card do seu canal de **API Oficial Meta**, clique no ícone de **Templates** (ícone de documento 📄) na barra de ações.
+
+Uma janela será exibida com todos os templates existentes, organizados em abas: **Todos**, **Aprovados**, **Pendentes** e **Rejeitados**.
+
+---
+
+### 3. Clique em "+ Criar Template"
+
+No canto superior direito da janela de templates, clique no botão **+ Criar Template**.
+
+---
+
+### 4. Preencha os campos do template
+
+**Nome do Template** *(obrigatório)*
+Escolha um nome interno para identificar o template. Use apenas letras minúsculas, números e underscores (ex: `lembrete_consulta`, `boas_vindas`).
+
+**Idioma**
+Selecione o idioma da mensagem. O padrão é **Português (Brasil)**.
+
+**Categoria**
+Escolha a categoria que melhor descreve o uso do template:
+- **Utilidade** — confirmações, atualizações de pedido, lembretes
+- **Marketing** — promoções, ofertas, novidades
+- **Autenticação** — códigos de verificação e senhas
+
+**Cabeçalho (Header)** *(opcional)*
+Adicione um elemento visual ou textual acima do corpo da mensagem:
+- **Sem cabeçalho** — apenas texto
+- **Texto** — uma linha de destaque
+- **Imagem** — uma foto ou banner
+- **Vídeo** — um vídeo curto
+- **Documento** — um arquivo PDF, por exemplo
+
+**Corpo da Mensagem** *(obrigatório)*
+Escreva o conteúdo principal da mensagem. Máximo de **1024 caracteres**.
+
+Para personalizar com dados do lead, use variáveis no formato `{{1}}`, `{{2}}`, `{{3}}`, etc. Exemplo:
+
+```
+Olá {{1}}, sua consulta está agendada para {{2}}.
+```
+
+**Rodapé (Footer)** *(opcional)*
+Adicione um texto de rodapé abaixo da mensagem. Máximo de **60 caracteres** (ex: "Este é um serviço automático").
+
+**Botões** *(opcional)*
+Adicione botões de ação à mensagem, como link, telefone ou resposta rápida.
+
+---
+
+### 5. Clique em "Criar Template"
+
+Após preencher todos os campos, clique em **Criar Template**. O template será enviado automaticamente para aprovação do WhatsApp/Meta.
+
+Você pode acompanhar o status na aba **Pendentes** da janela de templates. Quando aprovado, ele aparecerá na aba **Aprovados** e estará disponível para uso em cadências.
+
+---
+
+## Dúvidas frequentes
+
+<AccordionGroup>
+  <Accordion title="Por que meu template foi rejeitado?">
+    O WhatsApp pode rejeitar templates que violam suas políticas de uso — conteúdo enganoso, proibido ou que não se encaixa na categoria selecionada. Revise o conteúdo, ajuste e crie um novo template.
+  </Accordion>
+
+  <Accordion title="Posso editar um template após criá-lo?">
+    Enquanto o template estiver **pendente**, ainda é possível editá-lo. Após ser **aprovado**, ele não pode mais ser alterado — se precisar mudar, exclua e crie um novo.
+  </Accordion>
+
+  <Accordion title="Com que frequência preciso sincronizar os templates?">
+    A sincronização é automática, mas você pode clicar em **Sincronizar** na janela de templates para forçar uma atualização manual com os dados mais recentes do Meta.
+  </Accordion>
+</AccordionGroup>

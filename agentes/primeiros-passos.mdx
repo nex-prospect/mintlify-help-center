@@ -1,0 +1,112 @@
+---
+title: "Agentes — Primeiros Passos"
+sidebarTitle: "Primeiros Passos"
+description: "A sequência completa para criar e ativar um agente de IA do zero."
+icon: "flag-checkered"
+---
+
+Este guia mostra a sequência completa para criar e ativar um agente de IA do zero — do perfil até o primeiro teste.
+
+---
+
+## Antes de começar
+
+Certifique-se de que você tem ao menos um canal de WhatsApp conectado na plataforma. O agente precisa de um canal para enviar e receber mensagens. Se ainda não conectou um canal, acesse **Canais** no menu lateral primeiro.
+
+---
+
+## 1. Crie o agente
+
+Acesse **Menu lateral → Agentes** e clique em **+ Adicionar Agente**.
+
+Você tem três opções de ponto de partida:
+
+- **Em branco** — configure tudo manualmente do zero.
+- **Criar com Assistente** — descreva seu tipo de negócio e a IA sugere o perfil e as instruções automaticamente.
+- **Modelo pronto** — clique em um dos templates da seção *Comece com um modelo* para partir de uma configuração já estruturada.
+
+Para a maioria dos casos, **Criar com Assistente** é o caminho mais rápido. Veja mais opções em [Agentes — Visão Geral](/agentes/visao-geral).
+
+---
+
+## 2. Configure o perfil
+
+Na aba **Perfil**, defina a identidade do agente:
+
+1. **Nome no sistema** — como o agente aparecerá na plataforma (uso interno).
+2. **Nome do assistente** — o nome que o agente usará para se apresentar ao lead (ex.: "Ana").
+3. **Personalidade** — como o agente se comunica: tom de voz, estilo e diretrizes de comportamento.
+4. **Mensagem de boas-vindas** — a primeira mensagem enviada ao lead. Use `{{LEAD_NAME}}` para personalizar com o nome do contato.
+5. **Empresa** — o nome da empresa que o agente representa e uma breve descrição do negócio.
+
+Salve antes de continuar. Veja detalhes em [Perfil](/agentes/perfil).
+
+---
+
+## 3. Escreva as instruções de treinamento
+
+Na aba **Treinamento**, escreva as instruções que guiam o comportamento do agente durante as conversas. Inclua:
+
+- O que o agente deve fazer e o que deve evitar
+- O fluxo de conversa esperado
+- As perguntas que o agente deve fazer ao lead
+
+Se quiser ajuda, clique em **Melhorar com IA** após escrever uma versão inicial — a IA refina o texto automaticamente.
+
+Depois, vincule os documentos relevantes em **Base de Conhecimento** clicando em **+ Adicionar Conhecimento**. O agente consultará essa base para responder perguntas específicas sobre sua empresa, produtos ou serviços. Veja detalhes em [Treinamento](/agentes/treinamento).
+
+---
+
+## 4. Ajuste as configurações de comportamento
+
+Na aba **Configurações**, defina:
+
+- **Horários de atendimento** — dias e horários em que o agente responde automaticamente. Fora desse intervalo, o agente fica silencioso.
+- **Tempo de espera (Debounce)** — quantos segundos o agente aguarda antes de responder, para agrupar mensagens enviadas em sequência pelo lead.
+- **Temperatura** — quanto mais alto, mais variadas as respostas; quanto mais baixo, mais previsíveis.
+
+Veja todas as opções em [Configurações](/agentes/configuracoes).
+
+---
+
+## 5. Configure as ferramentas (opcional)
+
+Na aba **Ferramentas**, ative as automações que o agente pode executar durante uma conversa — como mudar o status do lead automaticamente, adicionar tags ou pausar a IA quando detectar uma condição específica.
+
+Para cada ferramenta, clique em **Personalizar comportamento** e defina em linguagem natural quando ela deve ser acionada. Veja detalhes em [Ferramentas](/agentes/ferramentas).
+
+---
+
+## 6. Configure o follow-up automático (opcional)
+
+Na aba **Follow-up**, ative o reengajamento automático de leads que ficam inativos. Configure quantas horas ou dias o agente aguarda antes de enviar cada mensagem de follow-up e o que deve ser enviado.
+
+Veja detalhes em [Follow-up](/agentes/follow-up).
+
+---
+
+## 7. Teste o agente antes de ativar
+
+Na aba **Teste seu Agente**, simule uma conversa com o agente para validar se ele responde conforme esperado. Ajuste as instruções de treinamento e repita o teste quantas vezes precisar antes de colocar o agente em produção.
+
+Veja detalhes em [Teste seu Agente](/agentes/teste-seu-agente).
+
+---
+
+## 8. Ative o agente
+
+Com tudo configurado e testado, clique no toggle **Ativo** no canto superior direito de qualquer aba. O agente passará a responder automaticamente aos leads vinculados ao canal de WhatsApp correspondente.
+
+---
+
+## Resumo da sequência
+
+1. [Conecte um canal de WhatsApp](/canais/conectar-whatsapp-nao-oficial) (pré-requisito)
+2. [Crie o agente](/agentes/visao-geral)
+3. [Configure o perfil](/agentes/perfil)
+4. [Escreva as instruções e vincule conhecimento](/agentes/treinamento)
+5. [Ajuste horários e comportamento](/agentes/configuracoes)
+6. [Configure ferramentas](/agentes/ferramentas) *(opcional)*
+7. [Configure follow-up](/agentes/follow-up) *(opcional)*
+8. [Teste o agente](/agentes/teste-seu-agente)
+9. Ative

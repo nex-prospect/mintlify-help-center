@@ -1,0 +1,89 @@
+---
+title: "Como adicionar base de conhecimento por URL"
+sidebarTitle: "Adicionar por URL"
+description: "Indexe o conteúdo de páginas da web na base de conhecimento do assistente."
+icon: "link"
+---
+
+A opção **Adicionar URL** permite que o assistente de IA indexe o conteúdo de páginas da web e use essas informações para responder aos seus leads.
+
+<Warning>
+  O conteúdo é indexado automaticamente. **URLs que exigem login não são suportadas.**
+</Warning>
+
+---
+
+## Passo a passo
+
+### 1. Acesse a seção de Conhecimento
+
+No menu lateral esquerdo, clique em **Conhecimento**.
+
+---
+
+### 2. Clique em "Adicionar URL"
+
+Na tela de Conhecimento, clique no card **Adicionar URL** — *"Indexe páginas web na base."*
+
+---
+
+### 3. Preencha os campos
+
+**URL** *(obrigatório)*
+Cole o endereço completo da página que deseja indexar.
+Exemplo: `https://www.suaempresa.com.br/perguntas-frequentes`
+
+**Título** *(opcional)*
+Nome que identificará esse conhecimento na lista.
+Exemplo: `FAQ - Perguntas Frequentes`
+
+**Quando usar** *(opcional)*
+Instrua o assistente sobre quando ele deve consultar esse conteúdo.
+Exemplo: *"Use quando o cliente tiver dúvidas gerais sobre produtos ou serviços."*
+
+**Escopo**
+Define quais assistentes terão acesso a esse conhecimento:
+- **Global (todos os assistentes)** — disponível para todos os assistentes da conta.
+- **Vincular a um assistente** — apenas o assistente escolhido usará esse conhecimento.
+
+---
+
+### 4. Clique em "Avançar"
+
+Após preencher os campos, clique em **Avançar** para ir à próxima etapa.
+
+---
+
+### 5. Escolha o que indexar
+
+Uma segunda tela será exibida com a pergunta **"O que devemos indexar?"**. Selecione uma das opções:
+
+**Só a página deste link**
+Indexa apenas o conteúdo da URL informada. Ideal para uma página específica, como uma política de privacidade ou uma FAQ.
+
+**Todas as páginas do site**
+Rastreia e indexa várias páginas a partir do link informado. Ideal para indexar um site inteiro ou uma seção completa.
+
+---
+
+### 6. Clique em "+ Adicionar"
+
+Após escolher a opção, clique em **+ Adicionar**. O conteúdo será indexado automaticamente e estará disponível para o assistente usar nas conversas.
+
+---
+
+## Dúvidas frequentes
+
+<AccordionGroup>
+  <Accordion title="Por que minha URL não foi indexada corretamente?">
+    Verifique se a página não exige login para ser acessada — esse tipo de URL não é suportado. Páginas com muito conteúdo dinâmico (gerado por JavaScript) também podem ter limitações na indexação.
+  </Accordion>
+
+  <Accordion title="Posso adicionar mais de uma URL?">
+    Sim! Repita o processo para cada URL que quiser adicionar. Todas aparecerão na lista de conhecimentos.
+  </Accordion>
+
+  <Accordion title="Como sei que a URL foi indexada com sucesso?">
+    Ela aparecerá na lista de conhecimentos com o tipo **URL** e o tamanho do conteúdo indexado.
+  </Accordion>
+</AccordionGroup>

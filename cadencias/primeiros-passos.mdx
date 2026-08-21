@@ -1,0 +1,110 @@
+---
+title: "Cadências — Primeiros Passos"
+sidebarTitle: "Primeiros Passos"
+description: "A sequência completa para criar uma cadência e enviar mensagens automatizadas."
+icon: "flag-checkered"
+---
+
+Este guia mostra a sequência completa para criar uma cadência e começar a enviar mensagens automatizadas para seus leads.
+
+---
+
+## Antes de começar
+
+Cadências precisam de dois pré-requisitos:
+
+1. **Um agente de IA criado** — a cadência usa o agente para responder automaticamente após o disparo. Se ainda não criou um agente, acesse **Agentes** no menu lateral primeiro.
+2. **Leads cadastrados** — você precisará de leads na plataforma para adicionar à cadência após criá-la. Se ainda não tem leads, acesse a seção **Leads**.
+
+---
+
+## 1. Crie a cadência
+
+Acesse **Menu lateral → Cadências** e clique em **+ Nova Cadência**.
+
+Você tem três opções de ponto de partida:
+
+- **Em branco** — configure tudo do zero.
+- **Modelo pronto** — clique em um dos templates na seção *Selecione Modelos*. A cadência já vem com etapas e mensagens configuradas, prontas para ajuste.
+- **Importar** — use um arquivo exportado de outra cadência.
+
+Para a maioria dos casos, um modelo pronto é o caminho mais rápido. Veja mais em [Cadências — Visão Geral](/cadencias/visao-geral).
+
+O wizard de criação guia você por todas as configurações iniciais. Veja o passo a passo completo em [Criar uma Cadência](/cadencias/criar-cadencia-em-branco).
+
+---
+
+## 2. Configure os filtros de entrada
+
+Defina quais leads podem entrar na cadência:
+
+- **Tags requeridas** — o lead precisa ter exatamente as tags selecionadas.
+- **Status requerido** — defina quais status permitem a entrada.
+
+Esses filtros protegem a cadência de enviar mensagens para leads que não deveriam recebê-las.
+
+---
+
+## 3. Vincule um agente
+
+Selecione o agente de IA que será responsável por responder aos leads após o disparo. Defina também se a **IA deve responder automaticamente** após o lead interagir com a primeira mensagem, ou se a sessão deve ser pausada para atendimento manual.
+
+---
+
+## 4. Configure os dias e horários de envio
+
+Ative os dias da semana e defina os horários de início e término para cada dia. Mensagens fora desse intervalo ficam na fila até o próximo horário disponível.
+
+---
+
+## 5. Monte as etapas e mensagens
+
+As etapas são as fases sequenciais da cadência. Para cada etapa:
+
+1. Defina o **intervalo** — quanto tempo aguardar após a etapa anterior antes de enviar.
+2. Adicione uma ou mais **mensagens**, cada uma com seu próprio atraso e conteúdo.
+
+Uma cadência simples de reativação, por exemplo, pode ter três etapas: uma mensagem imediata, um follow-up depois de 2 dias e um último contato depois de 5 dias.
+
+Veja como editar etapas e mensagens em [Editar uma Cadência](/cadencias/editar-cadencia).
+
+---
+
+## 6. Ative a cadência
+
+Com tudo configurado, volte à lista de cadências, clique no ícone `...` ao lado da cadência e selecione **Ativar** — ou use o toggle na página de visão geral da cadência.
+
+<Note>
+  A cadência precisa estar **Ativa** para processar leads e enviar mensagens.
+</Note>
+
+---
+
+## 7. Adicione leads à cadência
+
+Com a cadência ativa, adicione os leads que devem recebê-la. Você pode fazer isso de duas formas:
+
+- Pela própria tela da cadência, usando a opção de adicionar leads manualmente.
+- Automaticamente, via fluxo de automação ou webhook, conforme a configuração da sua conta.
+
+Apenas leads que atendem aos filtros de entrada configurados serão aceitos.
+
+---
+
+## 8. Acompanhe o desempenho
+
+Clique no nome da cadência na lista para abrir a **Visão Geral** com os indicadores principais. Para acompanhar a fila em tempo real, clique em **Monitorar**.
+
+Veja tudo em [Monitorar uma Cadência](/cadencias/monitorar-cadencia).
+
+---
+
+## Resumo da sequência
+
+1. Crie o agente (pré-requisito) e tenha leads cadastrados
+2. [Crie a cadência](/cadencias/criar-cadencia-em-branco) — use um modelo se quiser partir de algo pronto
+3. Configure filtros, agente e horários de envio
+4. [Monte as etapas e mensagens](/cadencias/editar-cadencia)
+5. [Ative a cadência](/cadencias/visao-geral)
+6. Adicione leads
+7. [Monitore o desempenho](/cadencias/monitorar-cadencia)

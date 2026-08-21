@@ -1,0 +1,129 @@
+---
+title: "Cadências — Editar uma Cadência"
+sidebarTitle: "Editar uma Cadência"
+description: "Configure filtros de entrada, agente, horários, etapas e mensagens de uma cadência."
+icon: "pen"
+---
+
+**Para acessar:** Cadências → ícone `...` ao lado da cadência → Editar
+
+<Warning>
+  A cadência precisa estar **Inativa** para ser editada. Se estiver ativa, pause-a primeiro pelo menu `...` antes de abrir a edição.
+</Warning>
+
+---
+
+## Como renomear a cadência
+
+Clique no ícone de lápis ao lado do nome no topo da página e digite o novo nome.
+
+---
+
+## Como configurar os filtros de entrada
+
+Os filtros definem quais leads podem entrar ou permanecer na cadência.
+
+**Tags Requeridas:**
+
+1. No campo de busca da seção **Tags Requeridas**, procure a tag desejada.
+2. Clique na tag para selecioná-la.
+3. Repita para adicionar quantas tags forem necessárias.
+
+<Note>
+  O lead precisa ter **exatamente** as tags selecionadas — se tiver qualquer tag adicional, será descartado da cadência.
+</Note>
+
+**Status Requerido:**
+
+1. Clique nos status desejados para selecioná-los.
+2. Os status selecionados aparecem como chips abaixo das opções.
+
+---
+
+## Como trocar o agente vinculado
+
+1. Na seção **Agente**, clique no campo que exibe o nome do agente atual.
+2. Selecione o agente desejado na lista.
+
+**IA responde aos leads** — controla o comportamento pós-disparo:
+
+- **Ativado** — após o lead interagir com a primeira mensagem, o agente responde automaticamente.
+- **Desativado** — a cadência envia as mensagens, mas a sessão do lead é pausada logo em seguida, sem respostas automáticas.
+
+Clique no toggle para alternar entre os dois modos.
+
+---
+
+## Como configurar dias e horários de envio
+
+1. Na seção **Entrega**, ative o toggle ao lado de cada dia da semana desejado.
+2. Para cada dia ativo, defina o **horário de início** e o **horário de término**.
+3. Dias desativados não terão envios naquele período.
+
+**Fuso horário:** clique no seletor de fuso para alterar o horário de referência. Padrão: `Horário de Brasília (GMT-3)`.
+
+---
+
+## Como agendar o início dos envios
+
+1. Na seção **Agendamento**, clique no campo de data e hora.
+2. Defina a data e hora de início programado.
+
+Quando não configurado, exibe **Sem agendamento** — os envios começam assim que a cadência for ativada.
+
+---
+
+## Como limitar a quantidade de leads por período
+
+1. Na seção **Controle de Envio**, marque o checkbox **Ativar controle de limite de envio**.
+2. Selecione o **Tipo de Limite** (ex.: Diário).
+3. Defina o **Máximo de Leads** — número máximo que pode entrar no período. Use `0` para ilimitado.
+
+Quando o limite é atingido, novos leads ficam pendentes até o próximo período.
+
+---
+
+## Como configurar o formato das variáveis
+
+Na seção **Formatação de Variáveis**, ajuste:
+
+- **Idioma** — afeta variáveis de texto sensíveis a idioma.
+- **Formato de Data** — ex.: DD/MM/YYYY.
+- **Formato de Hora** — ex.: 24h (14:30).
+
+---
+
+## Como selecionar o canal de envio
+
+Na seção **Canais de Envio**, clique no canal de WhatsApp desejado. A configuração se aplica a todas as etapas da cadência.
+
+---
+
+## Como gerenciar as etapas da cadência
+
+As etapas são as fases sequenciais — cada uma pode conter uma ou mais mensagens.
+
+**Adicionar uma etapa:**
+
+Clique em **+ Adicionar Etapa** (no topo ou no final da lista).
+
+**Configurar uma etapa:**
+
+1. Clique no nome da etapa para renomeá-la.
+2. Ajuste o **Intervalo** — tempo de espera antes de enviar as mensagens desta etapa.
+3. Use as **setas de ordenação** para reposicionar a etapa na sequência.
+4. Clique no **ícone de lixeira** para excluir a etapa.
+
+**Adicionar mensagens a uma etapa:**
+
+1. Dentro da etapa, clique em **+ Adicionar mensagem**.
+2. Clique no **ícone de edição** ao lado da mensagem para abrir o editor.
+3. Defina o **Tipo** (ex.: Texto), o **Atraso** e o conteúdo da mensagem.
+4. Clique no **ícone de lixeira** para excluir uma mensagem.
+
+---
+
+## Como salvar as alterações
+
+- **Salvar automaticamente** — ative o toggle no canto superior direito para salvar cada alteração em tempo real.
+- **Salvar manualmente** — clique no botão **Salvar** para confirmar todas as alterações de uma vez.

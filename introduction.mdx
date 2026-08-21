@@ -1,90 +1,99 @@
 ---
 title: "Central de Ajuda Leavo AI"
-sidebarTitle: "Bem-vindo"
-description: "Bem-vindo à Central de Ajuda da Leavo AI. Explore os guias para dominar a plataforma."
+sidebarTitle: "Por onde começar"
+description: "O caminho mais rápido para sair do zero até ter sua operação de WhatsApp funcionando com IA."
 icon: "house"
 ---
 
-Bem-vindo à Central de Ajuda da **Leavo AI**. Aqui você encontra tudo que precisa para configurar e usar a plataforma.
+Bem-vindo à Leavo. Este guia mostra o caminho mais rápido para sair do zero até ter sua operação de WhatsApp funcionando com IA.
+
+Siga as etapas na ordem — cada uma é pré-requisito para a próxima.
+
+---
+
+## Etapa 1 — Conecte um canal de WhatsApp
+
+Sem um canal conectado, nada funciona. O canal é o número de WhatsApp pelo qual o agente vai conversar com seus leads.
+
+Acesse **Menu lateral → Canais** e conecte seu número. A Leavo suporta dois tipos:
+
+- **WhatsApp não oficial (QR Code)** — conecte qualquer número escaneando o QR Code. Mais rápido para começar. Veja o passo a passo em [Como conectar WhatsApp não oficial](/canais/conectar-whatsapp-nao-oficial).
+- **WhatsApp Business API (Meta oficial)** — canal oficial para empresas. Necessário para campanhas em massa e templates aprovados.
+
+<Note>
+  Conecte o canal antes de continuar. Sem ele, o agente não consegue enviar nem receber mensagens.
+</Note>
+
+---
+
+## Etapa 2 — Importe seus leads
+
+Com o canal conectado, cadastre os contatos que receberão seu atendimento.
+
+Acesse **Menu lateral → Leads**. Você pode:
+
+- **Importar em massa** — faça upload de uma planilha CSV com toda a sua base de uma vez. Ideal para quem já tem uma lista de contatos.
+- **Adicionar individualmente** — cadastre contatos um a um. Útil para começar com poucos leads ou testar.
+
+Antes de importar, vale configurar as **tags** e **status** que você usará para organizar os leads. Veja o guia completo em [Leads — Primeiros Passos](/leads/primeiros-passos).
+
+---
+
+## Etapa 3 — Crie e configure um agente
+
+O agente é a IA que vai conversar com seus leads pelo WhatsApp. Acesse **Menu lateral → Agentes → + Adicionar Agente**.
+
+Configure o essencial para começar:
+
+1. **Perfil** — nome do agente, personalidade e mensagem de boas-vindas
+2. **Treinamento** — instruções de comportamento e base de conhecimento
+3. **Configurações** — horários em que o agente deve responder
+
+Teste o agente na aba **Teste seu Agente** antes de ativar. Quando estiver satisfeito, ligue o toggle **Ativo**.
+
+Veja o passo a passo completo em [Agentes — Primeiros Passos](/agentes/primeiros-passos).
+
+---
+
+## Etapa 4 — Acompanhe as conversas
+
+Com o agente ativo e leads cadastrados, as primeiras conversas já começarão a acontecer automaticamente quando os leads enviarem mensagens.
+
+Acesse **Menu lateral → Conversas** para acompanhar tudo em tempo real. Use os filtros para separar conversas por status, canal ou responsável.
+
+Quando precisar intervir manualmente em uma conversa, pause a IA daquele lead e assuma o atendimento.
+
+---
+
+## A partir daqui, expanda conforme a necessidade
+
+Com o básico funcionando, você pode ir adicionando as camadas que fazem sentido para o seu negócio:
 
 <CardGroup cols={2}>
-  <Card title="Dashboard" icon="chart-line" href="/dashboard-leavo">
-    Visão geral do desempenho do time com métricas, gráficos e alertas.
+  <Card title="Cadências" icon="list-timeline" href="/cadencias/primeiros-passos">
+    Para prospecção e reativação automatizadas. Em vez de esperar o lead entrar em contato, a cadência dispara mensagens para grupos de leads em horários programados.
   </Card>
 
-  <Card title="Conversas" icon="messages" href="/conversas">
-    Gerencie todas as trocas de mensagens entre leads e agentes de IA.
+  <Card title="Pipeline" icon="filter" href="/pipeline/primeiros-passos">
+    Para times comerciais que precisam rastrear negócios e oportunidades. Crie um funil de vendas no kanban e vincule os leads às etapas do processo.
   </Card>
 
-  <Card title="Base de Conhecimento" icon="book" href="/base-de-conhecimento">
-    Alimente os agentes com as informações que precisam para responder bem.
+  <Card title="Campanhas" icon="megaphone" href="/campanhas/visao-geral">
+    Para disparos em massa com templates Meta. Útil para promoções, comunicados e reativações em larga escala. Requer canal de API Oficial Meta.
   </Card>
 
-  <Card title="Agentes de IA" icon="robot" href="/agentes-de-ia">
-    Crie e configure os assistentes que interagem com seus leads.
-  </Card>
-
-  <Card title="Canais" icon="whatsapp" href="/canais">
-    Conecte números de WhatsApp e outros meios de atendimento.
-  </Card>
-
-  <Card title="Cadências" icon="list-timeline" href="/cadencias">
-    Sequências automáticas de mensagens para nutrir e converter leads.
-  </Card>
-
-  <Card title="Integrações" icon="plug" href="/integracoes">
-    Conecte a Leavo AI a CRMs, Google Agenda e sistemas externos.
-  </Card>
-
-  <Card title="Leads" icon="users" href="/leads">
-    Cadastro central de contatos com visualização em lista ou kanban.
-  </Card>
-
-  <Card title="Pipeline" icon="filter" href="/pipeline">
-    Gerencie negócios em formato de funil de vendas.
-  </Card>
-
-  <Card title="Agendamentos" icon="calendar" href="/agendamentos">
-    Calendário de reuniões marcadas pelos agentes e pelo time.
-  </Card>
-
-  <Card title="Configurações" icon="gear" href="/configuracoes">
-    Perfil, cobrança, departamentos e permissões da conta.
-  </Card>
-
-  <Card title="Ajuda e Suporte" icon="circle-question" href="/ajuda-e-suporte">
-    Acesse suporte, novidades, tutoriais e o guia de configuração.
+  <Card title="Dashboard" icon="chart-line" href="/dashboard">
+    Acompanhe as métricas da operação: taxa de resposta, reuniões agendadas, funil de conversão e desempenho dos agentes.
   </Card>
 </CardGroup>
 
-## Guia de Configuração — 9 Passos
+---
 
-<Steps>
-  <Step title="Criar o primeiro agente de IA">
-    Acesse Agentes e configure o assistente que vai interagir com seus leads.
-  </Step>
-  <Step title="Subir conteúdo na base de conhecimento">
-    Adicione URLs, documentos ou textos para o agente usar nas respostas.
-  </Step>
-  <Step title="Adicionar arquivos (opcional)">
-    Suba catálogos, tabelas de preço ou apresentações para o agente consultar.
-  </Step>
-  <Step title="Configurar tags e campos personalizados">
-    Em Leads › Gerenciar, crie as tags e campos que organizam seu funil.
-  </Step>
-  <Step title="Configurar a cadência de mensagens">
-    Crie ou use um template de cadência para automatizar o contato com leads.
-  </Step>
-  <Step title="Conectar o canal de WhatsApp">
-    Em Canais, adicione o número e escaneie o QR Code para ativar o atendimento.
-  </Step>
-  <Step title="Conectar agenda (opcional)">
-    Em Integrações › Google Agenda, conecte sua conta para agendamentos automáticos.
-  </Step>
-  <Step title="Configurar a origem de leads">
-    Configure webhooks de entrada ou integrações com CRM para receber leads automaticamente.
-  </Step>
-  <Step title="Ativar e monitorar a operação">
-    Ative as cadências, ligue os agentes e acompanhe pelo Dashboard e pelo Monitor.
-  </Step>
-</Steps>
+## Resumo da ordem de configuração
+
+1. [Conecte um canal de WhatsApp](/canais/conectar-whatsapp-nao-oficial)
+2. [Importe ou cadastre seus leads](/leads/primeiros-passos)
+3. [Crie e ative um agente](/agentes/primeiros-passos)
+4. Acompanhe as conversas
+5. [Configure cadências](/cadencias/primeiros-passos) *(quando quiser automatizar prospecção)*
+6. [Configure o pipeline](/pipeline/primeiros-passos) *(quando quiser gerenciar negócios)*
