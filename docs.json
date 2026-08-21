@@ -22,8 +22,8 @@
         },
         {
           "anchor": "Suporte",
-          "href": "mailto:suporte@leavo.ai",
-          "icon": "envelope"
+          "href": "https://wa.me/551151965302",
+          "icon": "whatsapp"
         }
       ]
     },
@@ -141,7 +141,7 @@
     "links": [
       {
         "label": "Suporte",
-        "href": "mailto:suporte@leavo.ai"
+        "href": "https://wa.me/551151965302"
       }
     ],
     "primary": {
