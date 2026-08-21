@@ -36,36 +36,102 @@
             "pages": ["introduction"]
           },
           {
-            "group": "Plataforma",
+            "group": "Canais",
+            "icon": "whatsapp",
             "pages": [
-              "quickstart",
-              "account-setup",
-              "concepts/overview",
-              "concepts/workspace",
-              {
-                "group": "Canais",
-                "pages": [
-                  "concepts/members-roles"
-                ]
-              }
+              "canais/conectar-whatsapp-nao-oficial",
+              "canais/criar-template-meta",
+              "canais/comprar-slots"
             ]
           },
           {
-            "group": "Comercial",
+            "group": "Leads",
+            "icon": "users",
             "pages": [
-              "guides/dashboard",
-              "guides/managing-data",
-              "guides/notifications",
-              "integrations/overview",
-              "guides/billing"
+              "leads/primeiros-passos",
+              "leads/lista-e-kanban",
+              "leads/adicionar-individual",
+              "leads/importar-em-massa",
+              "leads/gerenciar-tags-status-campos"
             ]
           },
           {
-            "group": "Conta",
+            "group": "Agentes",
+            "icon": "robot",
             "pages": [
-              "integrations/webhooks",
-              "integrations/sso"
+              "agentes/primeiros-passos",
+              "agentes/visao-geral",
+              "agentes/perfil",
+              "agentes/treinamento",
+              "agentes/configuracoes",
+              "agentes/ferramentas",
+              "agentes/follow-up",
+              "agentes/teste-seu-agente"
             ]
+          },
+          {
+            "group": "Conversas",
+            "icon": "messages",
+            "pages": [
+              "conversas/lista-e-filtros",
+              "conversas/ferramentas-na-conversa"
+            ]
+          },
+          {
+            "group": "Cadências",
+            "icon": "list-timeline",
+            "pages": [
+              "cadencias/primeiros-passos",
+              "cadencias/visao-geral",
+              "cadencias/criar-cadencia-em-branco",
+              "cadencias/editar-cadencia",
+              "cadencias/monitorar-cadencia"
+            ]
+          },
+          {
+            "group": "Pipeline",
+            "icon": "filter",
+            "pages": [
+              "pipeline/primeiros-passos",
+              "pipeline/visao-geral",
+              "pipeline/configurar",
+              "pipeline/criar-negocio",
+              "pipeline/painel-do-negocio"
+            ]
+          },
+          {
+            "group": "Campanhas",
+            "icon": "megaphone",
+            "pages": [
+              "campanhas/visao-geral",
+              "campanhas/criar-campanha"
+            ]
+          },
+          {
+            "group": "Dashboard",
+            "icon": "chart-line",
+            "pages": ["dashboard"]
+          },
+          {
+            "group": "Conhecimento",
+            "icon": "book",
+            "pages": [
+              "conhecimento/adicionar-por-arquivos",
+              "conhecimento/adicionar-por-url",
+              "conhecimento/criar-texto",
+              "conhecimento/usar-arquivos",
+              "conhecimento/criar-pasta"
+            ]
+          },
+          {
+            "group": "Agendamentos",
+            "icon": "calendar",
+            "pages": ["agendamentos"]
+          },
+          {
+            "group": "Integrações",
+            "icon": "plug",
+            "pages": ["integracoes/google-agenda"]
           }
         ]
       }

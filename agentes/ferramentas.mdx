@@ -1,0 +1,62 @@
+---
+title: "Agentes — Ferramentas"
+sidebarTitle: "Ferramentas"
+description: "Automações que o agente pode executar durante uma conversa com base em gatilhos."
+icon: "wrench"
+---
+
+A aba **Ferramentas** exibe as automações que o agente pode executar durante uma conversa, com base em gatilhos definidos por você.
+
+**Para acessar:** Agentes → selecione um agente → aba Ferramentas
+
+---
+
+## O que são ferramentas?
+
+Ferramentas são ações que o agente executa autonomamente quando detecta determinadas condições na conversa. Cada ferramenta é ativada por **gatilhos automáticos** que você configura em linguagem natural.
+
+<Note>
+  Para ativar ou desativar ferramentas globalmente na conta, acesse **Integrações → Ferramentas → Tools**.
+</Note>
+
+---
+
+## Ferramentas disponíveis
+
+| Ferramenta | Descrição |
+|---|---|
+| **Atualização automática de status** | Troca o status do lead automaticamente quando um gatilho é detectado na conversa. |
+| **Adição automática de tag** | Adiciona uma tag ao lead quando um gatilho é detectado. |
+| **Remoção automática de tag** | Remove uma tag do lead quando um gatilho é detectado. |
+| **Atualização automática de informações do lead** | Atualiza campos do lead (nome, e-mail, telefone, empresa, campos personalizados) quando um gatilho é detectado. |
+| **Parar a IA** | Pausa o agente neste lead quando um gatilho é detectado. |
+
+---
+
+## Personalizar comportamento
+
+Clique em **Personalizar comportamento** ao lado de qualquer ferramenta para configurar quando e como ela deve ser acionada. O modal que abre contém:
+
+### Gatilhos automáticos *(obrigatório)*
+
+Condições em linguagem natural que disparam a ferramenta automaticamente. Defina pelo menos um gatilho descrevendo o evento que deve acionar a ação.
+
+**Exemplo:** *"cliente confirmou a compra"* → a ferramenta muda o status do lead para "Fechado".
+
+Clique em **+ Adicionar gatilho** para incluir múltiplas condições.
+
+### Exemplos *(opcional — melhora a precisão)*
+
+Forneça casos de uso concretos para o agente entender melhor quando acionar a ferramenta. Cada exemplo mostra o que o lead diz e qual deve ser a ação resultante. Isso reduz ambiguidades e aumenta a precisão.
+
+Clique em **+ Adicionar exemplo** para incluir exemplos.
+
+### Ver prévia do prompt
+
+Expanda esta seção para visualizar como as instruções da ferramenta ficam formatadas no prompt enviado ao modelo de IA.
+
+---
+
+## Salvar
+
+Após configurar os gatilhos e exemplos, clique em **Salvar** no modal para confirmar as alterações.
