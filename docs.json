@@ -50,6 +50,7 @@
             "pages": [
               "leads/primeiros-passos",
               "leads/lista-e-kanban",
+              "leads/perfil-do-lead",
               "leads/adicionar-individual",
               "leads/importar-em-massa",
               "leads/gerenciar-tags-status-campos"
@@ -94,6 +95,7 @@
             "pages": [
               "pipeline/primeiros-passos",
               "pipeline/visao-geral",
+              "pipeline/criar-pipeline",
               "pipeline/configurar",
               "pipeline/criar-negocio",
               "pipeline/painel-do-negocio"
