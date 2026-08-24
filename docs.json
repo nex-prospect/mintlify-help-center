@@ -36,15 +36,6 @@
             "pages": ["introduction"]
           },
           {
-            "group": "Canais",
-            "icon": "whatsapp",
-            "pages": [
-              "canais/conectar-whatsapp-nao-oficial",
-              "canais/criar-template-meta",
-              "canais/comprar-slots"
-            ]
-          },
-          {
             "group": "Leads",
             "icon": "users",
             "pages": [
