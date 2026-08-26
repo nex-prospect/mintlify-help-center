@@ -5,11 +5,11 @@ description: "Adicione vários leads de uma só vez a partir de um arquivo CSV."
 icon: "file-csv"
 ---
 
-A importação em massa permite adicionar vários leads de uma só vez a partir de um arquivo CSV. Clique em **+ Novo Lead** no canto superior direito e selecione **Importar Leads em Massa**.
+A importação em massa permite adicionar vários leads de uma só vez a partir de um arquivo CSV. Clique em **\+ Novo Lead** no canto superior direito e selecione **Importar Leads em Massa**.
 
 🎥 **Prefere assistir?** Veja o tutorial em vídeo:
 
-<iframe src="https://www.tella.tv/video/aprenda-a-importar-leads-em-massa-na-plataforma-leavo-6rs7/embed" width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.tella.tv/video/aprenda-a-importar-leads-em-massa-na-plataforma-leavo-6rs7/embed" width="100%" height="400" frameborder="0" allowfullscreen />
 
 ---
 
@@ -20,7 +20,7 @@ A importação em massa permite adicionar vários leads de uma só vez a partir 
 O arquivo deve conter as seguintes colunas:
 
 | Coluna | Descrição |
-|---|---|
+| --- | --- |
 | nome | Primeiro nome do lead |
 | sobrenome | Sobrenome do lead |
 | telefone | Número de telefone |
@@ -32,42 +32,66 @@ O arquivo deve conter as seguintes colunas:
   Clique em **Baixar modelo** dentro do modal para baixar uma planilha CSV já com todas as colunas corretas e prontas para preencher.
 </Tip>
 
+<img
+  src="/images/5.png"
+  alt="5"
+  title="5"
+  style={{ width:"75%" }}
+/>
+
 ### 2. Faça o upload
 
 Arraste o arquivo CSV para a área indicada ou clique em **clique para selecionar** e escolha o arquivo. O tamanho máximo é de **10 MB** e somente arquivos `.csv` são aceitos.
+
+<img
+  src="/images/image-22.png"
+  alt="Image"
+  title="Image"
+  style={{ width:"72%" }}
+/>
 
 ### 3. Mapeie as colunas
 
 Após clicar em **Próximo**, a tela **Mapear Colunas do CSV** é exibida. Aqui você configura como os dados do seu arquivo serão interpretados:
 
-**País para DDI**
-Selecione o código do país (padrão: Brasil +55). Ele será aplicado automaticamente aos telefones importados que não tiverem DDI.
+**País para DDI** Selecione o código do país (padrão: Brasil \+55). Ele será aplicado automaticamente aos telefones importados que não tiverem DDI.
 
-**Departamento**
-Selecione o departamento que será atribuído a todos os leads importados. Ele é vinculado ao canal quando o lead receber a primeira mensagem.
+**Departamento** Selecione o departamento que será atribuído a todos os leads importados. Ele é vinculado ao canal quando o lead receber a primeira mensagem.
 
-**Preview dos dados**
-A plataforma exibe uma prévia com as primeiras 3 linhas do seu CSV para que você possa conferir se os dados estão corretos antes de continuar.
+**Preview dos dados** A plataforma exibe uma prévia com as primeiras 3 linhas do seu CSV para que você possa conferir se os dados estão corretos antes de continuar.
 
-**Mapeamento de campos**
-Para cada campo da Leavo (Nome, Sobrenome, Telefone, E-mail, Empresa, Tags), há dois dropdowns:
+**Mapeamento de campos** Para cada campo da Leavo (Nome, Sobrenome, Telefone, E-mail, Empresa, Tags), há dois dropdowns:
 
 1. **Tipo de origem** — escolha como o dado virá do CSV:
    - **Não mapear** — o campo não será preenchido (ou receberá `-` por padrão).
    - **Campo padrão** — vincula a um campo padrão do CSV. Ao selecionar esta opção, um segundo dropdown **Escolha o campo** é exibido com as opções: Nome, Sobrenome, Telefone, E-mail, Empresa.
    - **Tags** — mapeia a coluna do CSV para as tags do lead.
    - **Campo personalizado** — vincula a um campo personalizado configurado na conta.
-
 2. **Escolha o campo** — aparece somente quando "Campo padrão" é selecionado. Selecione qual coluna do seu CSV corresponde ao campo da Leavo.
 
 **Avisos de validação** exibidos na parte inferior da tela:
+
 - Se o campo **Nome** não for mapeado → será preenchido com `-` por padrão.
 - Se nenhum campo de contato (**Telefone** ou **E-mail**) for mapeado → a importação é bloqueada, pois ao menos um é obrigatório.
 - Linhas do CSV sem telefone ou e-mail válido serão ignoradas na importação.
 
+<img
+  src="/images/image-23.png"
+  alt="Image"
+  title="Image"
+  style={{ width:"59%" }}
+/>
+
 ### 4. Conclua a importação
 
 Clique em **Importar Leads** para finalizar. Os leads aparecerão na lista com o status padrão da conta.
+
+<img
+  src="/images/image-24.png"
+  alt="Image"
+  title="Image"
+  style={{ width:"63%" }}
+/>
 
 ---
 
