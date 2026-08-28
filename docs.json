@@ -46,6 +46,7 @@
             "group": "Conversas",
             "icon": "messages",
             "pages": [
+              "conversas/visao-geral",
               "conversas/lista-e-filtros",
               "conversas/ferramentas-na-conversa"
             ]
@@ -54,6 +55,7 @@
             "group": "Conhecimento",
             "icon": "book",
             "pages": [
+              "conhecimento/visao-geral",
               "conhecimento/adicionar-por-arquivos",
               "conhecimento/adicionar-por-url",
               "conhecimento/criar-texto",
@@ -65,8 +67,8 @@
             "group": "Agentes",
             "icon": "robot",
             "pages": [
-              "agentes/primeiros-passos",
               "agentes/visao-geral",
+              "agentes/gerenciar",
               "agentes/perfil",
               "agentes/treinamento",
               "agentes/configuracoes",
@@ -79,6 +81,7 @@
             "group": "Canais",
             "icon": "signal-stream",
             "pages": [
+              "canais/visao-geral",
               "canais/conectar-whatsapp-nao-oficial",
               "canais/criar-template-meta",
               "canais/comprar-slots"
@@ -88,8 +91,8 @@
             "group": "Cadências",
             "icon": "list-timeline",
             "pages": [
-              "cadencias/primeiros-passos",
               "cadencias/visao-geral",
+              "cadencias/gerenciar",
               "cadencias/criar-cadencia-em-branco",
               "cadencias/editar-cadencia",
               "cadencias/monitorar-cadencia"
@@ -106,7 +109,7 @@
             "group": "Leads",
             "icon": "users",
             "pages": [
-              "leads/primeiros-passos",
+              "leads/visao-geral",
               "leads/lista-e-kanban",
               "leads/perfil-do-lead",
               "leads/adicionar-individual",
@@ -119,6 +122,7 @@
             "icon": "megaphone",
             "pages": [
               "campanhas/visao-geral",
+              "campanhas/gerenciar",
               "campanhas/criar-campanha"
             ]
           },
@@ -126,8 +130,8 @@
             "group": "Pipeline",
             "icon": "filter",
             "pages": [
-              "pipeline/primeiros-passos",
               "pipeline/visao-geral",
+              "pipeline/gerenciar",
               "pipeline/criar-pipeline",
               "pipeline/configurar",
               "pipeline/criar-negocio",
@@ -167,5 +171,27 @@
   },
   "search": {
     "prompt": "Buscar na central de ajuda..."
-  }
+  },
+  "redirects": [
+    {
+      "source": "/agentes/primeiros-passos",
+      "destination": "/agentes/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/cadencias/primeiros-passos",
+      "destination": "/cadencias/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/pipeline/primeiros-passos",
+      "destination": "/pipeline/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/leads/primeiros-passos",
+      "destination": "/leads/visao-geral",
+      "permanent": true
+    }
+  ]
 }
