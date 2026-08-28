@@ -36,24 +36,29 @@
             "pages": ["introduction"]
           },
           {
-            "group": "Canais",
-            "icon": "signal-stream",
+            "group": "Dashboard",
+            "icon": "chart-line",
             "pages": [
-              "canais/conectar-whatsapp-nao-oficial",
-              "canais/criar-template-meta",
-              "canais/comprar-slots"
+              "dashboard"
             ]
           },
           {
-            "group": "Leads",
-            "icon": "users",
+            "group": "Conversas",
+            "icon": "messages",
             "pages": [
-              "leads/primeiros-passos",
-              "leads/lista-e-kanban",
-              "leads/perfil-do-lead",
-              "leads/adicionar-individual",
-              "leads/importar-em-massa",
-              "leads/gerenciar-tags-status-campos"
+              "conversas/lista-e-filtros",
+              "conversas/ferramentas-na-conversa"
+            ]
+          },
+          {
+            "group": "Conhecimento",
+            "icon": "book",
+            "pages": [
+              "conhecimento/adicionar-por-arquivos",
+              "conhecimento/adicionar-por-url",
+              "conhecimento/criar-texto",
+              "conhecimento/usar-arquivos",
+              "conhecimento/criar-pasta"
             ]
           },
           {
@@ -71,11 +76,12 @@
             ]
           },
           {
-            "group": "Conversas",
-            "icon": "messages",
+            "group": "Canais",
+            "icon": "signal-stream",
             "pages": [
-              "conversas/lista-e-filtros",
-              "conversas/ferramentas-na-conversa"
+              "canais/conectar-whatsapp-nao-oficial",
+              "canais/criar-template-meta",
+              "canais/comprar-slots"
             ]
           },
           {
@@ -87,6 +93,33 @@
               "cadencias/criar-cadencia-em-branco",
               "cadencias/editar-cadencia",
               "cadencias/monitorar-cadencia"
+            ]
+          },
+          {
+            "group": "Integrações",
+            "icon": "plug",
+            "pages": [
+              "integracoes/google-agenda"
+            ]
+          },
+          {
+            "group": "Leads",
+            "icon": "users",
+            "pages": [
+              "leads/primeiros-passos",
+              "leads/lista-e-kanban",
+              "leads/perfil-do-lead",
+              "leads/adicionar-individual",
+              "leads/importar-em-massa",
+              "leads/gerenciar-tags-status-campos"
+            ]
+          },
+          {
+            "group": "Campanhas",
+            "icon": "megaphone",
+            "pages": [
+              "campanhas/visao-geral",
+              "campanhas/criar-campanha"
             ]
           },
           {
@@ -102,38 +135,9 @@
             ]
           },
           {
-            "group": "Campanhas",
-            "icon": "megaphone",
-            "pages": [
-              "campanhas/visao-geral",
-              "campanhas/criar-campanha"
-            ]
-          },
-          {
-            "group": "Dashboard",
-            "icon": "chart-line",
-            "pages": ["dashboard"]
-          },
-          {
-            "group": "Conhecimento",
-            "icon": "book",
-            "pages": [
-              "conhecimento/adicionar-por-arquivos",
-              "conhecimento/adicionar-por-url",
-              "conhecimento/criar-texto",
-              "conhecimento/usar-arquivos",
-              "conhecimento/criar-pasta"
-            ]
-          },
-          {
             "group": "Agendamentos",
             "icon": "calendar",
             "pages": ["agendamentos"]
-          },
-          {
-            "group": "Integrações",
-            "icon": "plug",
-            "pages": ["integracoes/google-agenda"]
           }
         ]
       }
