@@ -67,7 +67,6 @@
             "group": "Agentes",
             "icon": "robot",
             "pages": [
-              "agentes/primeiros-passos",
               "agentes/visao-geral",
               "agentes/gerenciar",
               "agentes/perfil",
@@ -92,7 +91,6 @@
             "group": "Cadências",
             "icon": "list-timeline",
             "pages": [
-              "cadencias/primeiros-passos",
               "cadencias/visao-geral",
               "cadencias/gerenciar",
               "cadencias/criar-cadencia-em-branco",
@@ -112,7 +110,6 @@
             "icon": "users",
             "pages": [
               "leads/visao-geral",
-              "leads/primeiros-passos",
               "leads/lista-e-kanban",
               "leads/perfil-do-lead",
               "leads/adicionar-individual",
@@ -133,7 +130,6 @@
             "group": "Pipeline",
             "icon": "filter",
             "pages": [
-              "pipeline/primeiros-passos",
               "pipeline/visao-geral",
               "pipeline/gerenciar",
               "pipeline/criar-pipeline",
@@ -175,5 +171,27 @@
   },
   "search": {
     "prompt": "Buscar na central de ajuda..."
-  }
+  },
+  "redirects": [
+    {
+      "source": "/agentes/primeiros-passos",
+      "destination": "/agentes/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/cadencias/primeiros-passos",
+      "destination": "/cadencias/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/pipeline/primeiros-passos",
+      "destination": "/pipeline/visao-geral",
+      "permanent": true
+    },
+    {
+      "source": "/leads/primeiros-passos",
+      "destination": "/leads/visao-geral",
+      "permanent": true
+    }
+  ]
 }
