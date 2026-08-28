@@ -36,6 +36,11 @@
             "pages": ["introduction"]
           },
           {
+            "group": "Canais",
+            "icon": "signal-stream",
+            "pages": []
+          },
+          {
             "group": "Leads",
             "icon": "users",
             "pages": [
