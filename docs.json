@@ -46,6 +46,7 @@
             "group": "Conversas",
             "icon": "messages",
             "pages": [
+              "conversas/visao-geral",
               "conversas/lista-e-filtros",
               "conversas/ferramentas-na-conversa"
             ]
@@ -54,6 +55,7 @@
             "group": "Conhecimento",
             "icon": "book",
             "pages": [
+              "conhecimento/visao-geral",
               "conhecimento/adicionar-por-arquivos",
               "conhecimento/adicionar-por-url",
               "conhecimento/criar-texto",
@@ -67,6 +69,7 @@
             "pages": [
               "agentes/primeiros-passos",
               "agentes/visao-geral",
+              "agentes/gerenciar",
               "agentes/perfil",
               "agentes/treinamento",
               "agentes/configuracoes",
@@ -79,6 +82,7 @@
             "group": "Canais",
             "icon": "signal-stream",
             "pages": [
+              "canais/visao-geral",
               "canais/conectar-whatsapp-nao-oficial",
               "canais/criar-template-meta",
               "canais/comprar-slots"
@@ -90,6 +94,7 @@
             "pages": [
               "cadencias/primeiros-passos",
               "cadencias/visao-geral",
+              "cadencias/gerenciar",
               "cadencias/criar-cadencia-em-branco",
               "cadencias/editar-cadencia",
               "cadencias/monitorar-cadencia"
@@ -106,6 +111,7 @@
             "group": "Leads",
             "icon": "users",
             "pages": [
+              "leads/visao-geral",
               "leads/primeiros-passos",
               "leads/lista-e-kanban",
               "leads/perfil-do-lead",
@@ -119,6 +125,7 @@
             "icon": "megaphone",
             "pages": [
               "campanhas/visao-geral",
+              "campanhas/gerenciar",
               "campanhas/criar-campanha"
             ]
           },
@@ -128,6 +135,7 @@
             "pages": [
               "pipeline/primeiros-passos",
               "pipeline/visao-geral",
+              "pipeline/gerenciar",
               "pipeline/criar-pipeline",
               "pipeline/configurar",
               "pipeline/criar-negocio",
