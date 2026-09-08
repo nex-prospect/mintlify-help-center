@@ -142,6 +142,20 @@
             "group": "Agendamentos",
             "icon": "calendar",
             "pages": ["agendamentos"]
+          },
+          {
+            "group": "Organização",
+            "icon": "building",
+            "pages": [
+              "organizacao/membros-e-convites",
+              "organizacao/departamentos",
+              "organizacao/papeis-e-permissoes"
+            ]
+          },
+          {
+            "group": "Créditos & Plano",
+            "icon": "credit-card",
+            "pages": []
           }
         ]
       }
