@@ -157,7 +157,8 @@
             "icon": "credit-card",
             "pages": [
               "creditos/creditos-api-oficial",
-              "creditos/creditos-conversas"
+              "creditos/creditos-conversas",
+              "creditos/adicionais-e-slots"
             ]
           }
         ]
