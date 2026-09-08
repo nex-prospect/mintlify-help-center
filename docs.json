@@ -156,7 +156,8 @@
             "group": "Créditos & Plano",
             "icon": "credit-card",
             "pages": [
-              "creditos/creditos-api-oficial"
+              "creditos/creditos-api-oficial",
+              "creditos/creditos-conversas"
             ]
           }
         ]
