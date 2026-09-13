@@ -1,0 +1,124 @@
+---
+title: "Conectar API Oficial — Número Novo"
+sidebarTitle: "API Oficial — Número Novo"
+description: "Conecte um número de telefone novo à API Oficial do WhatsApp, sem utilizar coexistência."
+icon: "phone-plus"
+---
+
+Essa modalidade é indicada para quem quer adicionar um **número novo** à Leavo via API Oficial — um número que ainda não está em uso no WhatsApp, ou que será migrado exclusivamente para a API sem manter o acesso pelo aplicativo do celular.
+
+<Warning>
+  Antes de iniciar a conexão via API Oficial, entre em contato com o suporte da Leavo para que a funcionalidade seja liberada na sua conta. Sem essa liberação prévia, o processo não será concluído.
+</Warning>
+
+## Pré-requisitos
+
+Antes de começar, certifique-se de ter:
+
+- Um **número de telefone** disponível para receber SMS ou ligação (para verificação)
+- Acesso a uma conta **Facebook** (pessoal ou empresarial) vinculada a um **Meta Business Manager**
+- O número **não pode** estar ativo em nenhuma conta de WhatsApp no momento da conexão
+
+---
+
+## Passo a passo
+
+### 1. Acesse a seção Canais
+
+No menu lateral da Leavo, clique em **Canais**. Localize o canal de WhatsApp que deseja conectar via API Oficial e clique em **Reconectar**.
+
+<Note>
+  Ao clicar em Reconectar, uma nova tela será aberta automaticamente. É nessa tela que você fará o login com o Facebook e configurará o número novo.
+</Note>
+
+---
+
+### 2. Faça login com o Facebook
+
+Na tela que abrir, clique em **Continuar com o Facebook**. Você pode usar sua conta pessoal do Facebook ou a conta que utiliza para fins empresariais — o importante é que ela tenha acesso ao Meta Business Manager onde o número será registrado.
+
+Autorize os acessos solicitados e avance para a próxima etapa.
+
+---
+
+### 3. Selecione ou crie seu Meta Business Manager
+
+Após o login, será solicitado que você selecione um **Meta Business Manager (BM)**. Escolha o BM onde o número novo será registrado.
+
+Caso ainda não tenha um BM configurado, a Meta oferecerá a opção de criar um novo durante este fluxo.
+
+---
+
+### 4. Escolha a opção de Número Novo
+
+Nesta etapa, você verá duas opções de conexão. Escolha:
+
+> **"Insira um novo número de telefone do WhatsApp para começar"**
+
+Essa opção registra o número diretamente na API Oficial, sem coexistência com o aplicativo do celular.
+
+<Warning>
+  Ao escolher essa opção, o número **não poderá** ser usado no aplicativo do WhatsApp ou WhatsApp Business ao mesmo tempo. Se o número já estiver ativo no app, ele será desconectado do app ao ser migrado para a API.
+</Warning>
+
+---
+
+### 5. Informe o número de telefone
+
+Digite o número de telefone que deseja conectar, incluindo o código do país (+55 para Brasil) e o DDD. Clique em **Avançar**.
+
+---
+
+### 6. Verifique o número
+
+A Meta enviará um código de verificação para o número informado via **SMS** ou **ligação telefônica**. Escolha o método de recebimento preferido e insira o código de 6 dígitos no campo indicado.
+
+<Note>
+  Certifique-se de que o número está apto a receber SMS ou ligações no momento da verificação. Se o código não chegar, você pode solicitar o reenvio após alguns segundos.
+</Note>
+
+---
+
+### 7. Confirme o status do canal
+
+Após a verificação bem-sucedida, o status do canal na Leavo mudará automaticamente para **Conectado**. De volta à seção **Canais**, confirme que o número aparece como ativo.
+
+A partir desse momento, as mensagens enviadas para esse número serão processadas pela API Oficial e distribuídas conforme as configurações da sua conta.
+
+---
+
+## Diferença entre Número Novo e Coexistência
+
+| | Número Novo | Coexistência |
+|---|---|---|
+| Usa app no celular? | ❌ Não | ✅ Sim |
+| Requer WhatsApp Business? | ❌ Não | ✅ Sim |
+| Verificação por QR Code? | ❌ Não | ✅ Sim |
+| Verificação por SMS/Ligação? | ✅ Sim | ❌ Não |
+| Número pode estar em uso no app? | ❌ Não | ✅ Sim |
+
+---
+
+## Perguntas frequentes
+
+<AccordionGroup>
+  <Accordion title="Posso usar um número que já está no WhatsApp comum?">
+    Sim, mas ao registrá-lo na API Oficial, ele será automaticamente desconectado do aplicativo. Não é possível usar o mesmo número no app e na API ao mesmo tempo sem a modalidade de coexistência.
+  </Accordion>
+
+  <Accordion title="O que acontece com as mensagens antigas do número?">
+    O histórico de conversas do aplicativo não é transferido para a Leavo. Apenas as mensagens recebidas após a conexão com a API serão visíveis na plataforma.
+  </Accordion>
+
+  <Accordion title="Por que preciso falar com o suporte antes de conectar?">
+    A API Oficial requer uma liberação no backend da Leavo para garantir que sua conta está apta para esse tipo de conexão. Sem essa liberação, o fluxo não será concluído corretamente.
+  </Accordion>
+
+  <Accordion title="Qual o parceiro utilizado para a API Oficial?">
+    A Leavo utiliza a **Gupshup** (parceiro: ODCEM Technologies Pvt. Ltd.) como intermediário para a conexão com a API Oficial do WhatsApp. Esse parceiro é homologado pela Meta para fornecer acesso à API.
+  </Accordion>
+
+  <Accordion title="Posso mudar para coexistência depois?">
+    Não é possível alternar entre os modos diretamente. Para mudar para coexistência, seria necessário desconectar o número e reconectar escolhendo a outra opção. Entre em contato com o suporte para avaliar o melhor caminho.
+  </Accordion>
+</AccordionGroup>
