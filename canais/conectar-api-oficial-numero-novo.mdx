@@ -5,7 +5,7 @@ description: "Conecte um número de telefone novo à API Oficial do WhatsApp, se
 icon: "phone-plus"
 ---
 
-Essa modalidade é indicada para quem quer adicionar um **número novo** à Leavo via API Oficial — um número que ainda não está em uso no WhatsApp, ou que será migrado exclusivamente para a API sem manter o acesso pelo aplicativo do celular.
+Essa modalidade é indicada para quem quer adicionar um **número completamente novo** à Leavo via API Oficial — um número que ainda não está em uso no WhatsApp ou que será migrado exclusivamente para a API, sem manter acesso pelo aplicativo do celular.
 
 <Warning>
   Antes de iniciar a conexão via API Oficial, entre em contato com o suporte da Leavo para que a funcionalidade seja liberada na sua conta. Sem essa liberação prévia, o processo não será concluído.
@@ -13,84 +13,134 @@ Essa modalidade é indicada para quem quer adicionar um **número novo** à Leav
 
 ## Pré-requisitos
 
-Antes de começar, certifique-se de ter:
+Antes de começar, tenha em mãos:
 
 - Um **número de telefone** disponível para receber SMS ou ligação (para verificação)
-- Acesso a uma conta **Facebook** (pessoal ou empresarial) vinculada a um **Meta Business Manager**
-- O número **não pode** estar ativo em nenhuma conta de WhatsApp no momento da conexão
+- Acesso a uma conta **Facebook** (pessoal ou empresarial) com um **Meta Business Manager** — ou você criará um durante o processo
+- O número **não pode estar ativo** em nenhuma conta de WhatsApp. Se estiver, acesse as configurações do WhatsApp no celular, exclua a conta e aguarde alguns minutos antes de prosseguir
+- Nome de exibição da empresa em conformidade com as [diretrizes de nomes da Meta](https://business.whatsapp.com/policy)
 
 ---
 
 ## Passo a passo
 
-### 1. Acesse a seção Canais
+### 1. Acesse a seção Canais e clique em Reconectar
 
-No menu lateral da Leavo, clique em **Canais**. Localize o canal de WhatsApp que deseja conectar via API Oficial e clique em **Reconectar**.
+No menu lateral da Leavo, clique em **Canais**. Localize o canal de WhatsApp com status **API Oficial** e clique em **Reconectar**.
 
-<Note>
-  Ao clicar em Reconectar, uma nova tela será aberta automaticamente. É nessa tela que você fará o login com o Facebook e configurará o número novo.
-</Note>
+Uma nova janela será aberta diretamente no parceiro Gupshup (ODCEM Technologies Pvt. Ltd.), com uma tela de boas-vindas informando o que você precisará ter em mãos:
+
+- Nome de exibição da marca (como os clientes verão)
+- Razão social da empresa
+- Endereço oficial da empresa
 
 ---
 
 ### 2. Faça login com o Facebook
 
-Na tela que abrir, clique em **Continuar com o Facebook**. Você pode usar sua conta pessoal do Facebook ou a conta que utiliza para fins empresariais — o importante é que ela tenha acesso ao Meta Business Manager onde o número será registrado.
+Na tela do Gupshup, clique no botão azul de login e faça a autenticação com sua conta do **Facebook** — pode ser pessoal ou empresarial. O importante é que ela tenha acesso ao Meta Business Manager onde o número será registrado.
 
-Autorize os acessos solicitados e avance para a próxima etapa.
-
----
-
-### 3. Selecione ou crie seu Meta Business Manager
-
-Após o login, será solicitado que você selecione um **Meta Business Manager (BM)**. Escolha o BM onde o número novo será registrado.
-
-Caso ainda não tenha um BM configurado, a Meta oferecerá a opção de criar um novo durante este fluxo.
+Autorize os acessos solicitados pela Meta e avance.
 
 ---
 
-### 4. Escolha a opção de Número Novo
+### 3. Conecte ao parceiro ODCEM
 
-Nesta etapa, você verá duas opções de conexão. Escolha:
+Após o login, você verá a tela **"Selecione sua configuração"** — é aqui que você escolhe entre coexistência e número novo.
+
+Selecione a segunda opção:
 
 > **"Insira um novo número de telefone do WhatsApp para começar"**
+>
+> Adicione um novo número de telefone. Você precisará verificar seu novo número para continuar.
 
-Essa opção registra o número diretamente na API Oficial, sem coexistência com o aplicativo do celular.
+Clique em **Avançar**.
+
+---
+
+### 4. Selecione ou crie um Meta Business Manager
+
+Na próxima tela, a Meta solicitará que você selecione um **portfólio empresarial (Business Manager)**. Se já tiver um BM configurado nessa conta do Facebook, ele aparecerá listado — basta selecioná-lo.
+
+Se ainda não tiver um BM, crie um novo preenchendo os campos:
+
+- **Nome da empresa**: nome da sua empresa (ex.: "Leavo Suporte")
+- **E-mail comercial**: e-mail para receber verificações da Meta
+- **Site ou perfil comercial**: URL do site, Instagram ou outra presença digital da empresa — obrigatório para conseguir realizar disparos e responder leads. Se ainda não tiver um site, marque a opção **"Minha empresa não tem um site"**
+- **País**: Brasil
+
+Clique em **Avançar**.
+
+---
+
+### 5. Crie a conta e o perfil do WhatsApp Business
+
+Nesta etapa, você verá dois menus suspensos:
+
+- **Escolha uma conta do WhatsApp Business** → selecione **"Criar uma conta do WhatsApp Business"**
+- **Crie ou selecione um perfil do WhatsApp Business** → selecione **"Criar um novo perfil do WhatsApp Business"**
+
+Deixe o checkbox _"Instrua a Meta a identificar automaticamente eventos de pedidos e de leads"_ marcado e clique em **Avançar**.
+
+---
+
+### 6. Defina o perfil do WhatsApp Business
+
+Preencha as informações que identificarão este número:
+
+| Campo | O que é | Exemplo |
+| --- | --- | --- |
+| **Nome da conta do WhatsApp Business** | Identificação interna, visível só para você | "Suporte Vídeo" |
+| **Nome de exibição do WhatsApp Business** | Nome que seus clientes verão no chat | "Leavo", "Felipe Consultor" |
+| **Categoria** | Segmento que melhor descreve sua empresa | Outro, Tecnologia, etc. |
 
 <Warning>
-  Ao escolher essa opção, o número **não poderá** ser usado no aplicativo do WhatsApp ou WhatsApp Business ao mesmo tempo. Se o número já estiver ativo no app, ele será desconectado do app ao ser migrado para a API.
+  O **nome de exibição** deve estar de acordo com as [diretrizes de nomes de exibição da Meta](https://business.whatsapp.com/policy). Nomes que não cumprem as diretrizes podem causar restrições ou banimento do número.
 </Warning>
 
----
-
-### 5. Informe o número de telefone
-
-Digite o número de telefone que deseja conectar, incluindo o código do país (+55 para Brasil) e o DDD. Clique em **Avançar**.
+Clique em **Avançar**.
 
 ---
 
-### 6. Verifique o número
+### 7. Adicione o número de telefone
 
-A Meta enviará um código de verificação para o número informado via **SMS** ou **ligação telefônica**. Escolha o método de recebimento preferido e insira o código de 6 dígitos no campo indicado.
+Na tela **"Adicione seu número de telefone do WhatsApp"**, você verá duas opções. Selecione:
+
+> **"Adicionar um novo número"** — _A verificação é obrigatória._
+
+Um campo de telefone aparecerá com o prefixo **BR +55** já selecionado. Digite o número desejado (apenas DDD + número, sem o +55).
+
+Em seguida, escolha como deseja receber o código de verificação:
+
+- **SMS** — recomendado para celulares
+- **Ligação telefônica** — use se for um número fixo ou se o SMS não chegar
+
+Clique em **Avançar**.
+
+---
+
+### 8. Confirme o código de verificação
+
+Insira o **código de 6 dígitos** recebido por SMS ou ligação no campo indicado e clique em **Confirmar**.
 
 <Note>
-  Certifique-se de que o número está apto a receber SMS ou ligações no momento da verificação. Se o código não chegar, você pode solicitar o reenvio após alguns segundos.
+  Se o código não chegar em alguns segundos, aguarde 1 minuto e solicite o reenvio. Certifique-se de que o número está apto a receber mensagens ou ligações.
 </Note>
 
 ---
 
-### 7. Confirme o status do canal
+### 9. Finalize no parceiro e aguarde a confirmação
 
-Após a verificação bem-sucedida, o status do canal na Leavo mudará automaticamente para **Conectado**. De volta à seção **Canais**, confirme que o número aparece como ativo.
+Após a verificação, você será redirecionado de volta para a tela do parceiro Gupshup para a etapa final de vinculação.
 
-A partir desse momento, as mensagens enviadas para esse número serão processadas pela API Oficial e distribuídas conforme as configurações da sua conta.
+Na Leavo, o status do canal mudará automaticamente de **Aguardando** para **Conectado**. Pronto — o número está ativo na API Oficial e as mensagens recebidas já serão processadas pela plataforma.
 
 ---
 
 ## Diferença entre Número Novo e Coexistência
 
-| | Número Novo | Coexistência |
-|---|---|---|
+|  | Número Novo | Coexistência |
+| --- | --- | --- |
 | Usa app no celular? | ❌ Não | ✅ Sim |
 | Requer WhatsApp Business? | ❌ Não | ✅ Sim |
 | Verificação por QR Code? | ❌ Não | ✅ Sim |
@@ -103,11 +153,15 @@ A partir desse momento, as mensagens enviadas para esse número serão processad
 
 <AccordionGroup>
   <Accordion title="Posso usar um número que já está no WhatsApp comum?">
-    Sim, mas ao registrá-lo na API Oficial, ele será automaticamente desconectado do aplicativo. Não é possível usar o mesmo número no app e na API ao mesmo tempo sem a modalidade de coexistência.
+    Sim, mas primeiro você precisa excluir a conta do WhatsApp nas configurações do celular. Após a exclusão, aguarde alguns minutos antes de iniciar o processo de conexão na Leavo.
   </Accordion>
 
   <Accordion title="O que acontece com as mensagens antigas do número?">
     O histórico de conversas do aplicativo não é transferido para a Leavo. Apenas as mensagens recebidas após a conexão com a API serão visíveis na plataforma.
+  </Accordion>
+
+  <Accordion title="É obrigatório ter um site para criar o BM?">
+    A Meta exige uma URL de presença digital para validar o negócio. Se não tiver um site com domínio próprio, você pode usar o perfil do Instagram da empresa ou outra URL pública. Caso realmente não tenha nenhuma, marque a opção "Minha empresa não tem um site" durante o cadastro do BM.
   </Accordion>
 
   <Accordion title="Por que preciso falar com o suporte antes de conectar?">
@@ -115,7 +169,7 @@ A partir desse momento, as mensagens enviadas para esse número serão processad
   </Accordion>
 
   <Accordion title="Qual o parceiro utilizado para a API Oficial?">
-    A Leavo utiliza a **Gupshup** (parceiro: ODCEM Technologies Pvt. Ltd.) como intermediário para a conexão com a API Oficial do WhatsApp. Esse parceiro é homologado pela Meta para fornecer acesso à API.
+    A Leavo utiliza a **Gupshup** (parceiro: ODCEM Technologies Pvt. Ltd.) como intermediário para a conexão com a API Oficial do WhatsApp. Esse parceiro é homologado pela Meta.
   </Accordion>
 
   <Accordion title="Posso mudar para coexistência depois?">
