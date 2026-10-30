@@ -58,25 +58,6 @@ O agente monitorará apenas leads que estejam em um dos status selecionados.
   Se o tempo de espera de uma etapa expirar fora do horário permitido, a mensagem será enviada no próximo horário disponível.
 </Note>
 
-## Como configurar as etapas de follow-up (WhatsApp não oficial)
-
-Configure uma sequência de até **3 etapas** para canais WhatsApp não-oficiais:
-
-1. Clique em **\+ Adicionar Etapa**.
-2. Defina o **Tempo de Espera** — quanto tempo aguardar após a inatividade do lead antes de enviar (em minutos ou horas). O tempo é contado a partir da última mensagem recebida do lead, ou a partir do envio da etapa anterior.
-3. Escreva o **Prompt da Mensagem** — instrução para o agente sobre o que enviar. Use `{{TEMPO}}` para incluir automaticamente o tempo de inatividade do lead na mensagem.
-
-**Exemplo de prompt:** _"O contato está inativo há `{{TEMPO}}`. Envie uma mensagem com o intuito de reengajá-lo."_
-
-Para remover uma etapa, clique no **X** ao lado dela.
-
-<img
-  src="/images/image-67.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
 ## Como configurar follow-up com templates Meta (WhatsApp oficial)
 
 Para canais **WhatsApp Business API (Meta oficial)**:
