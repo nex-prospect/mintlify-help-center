@@ -109,7 +109,7 @@
             ]
           },
           {
-            "group": "Leads",
+            "group": "Contatos",
             "icon": "users",
             "pages": [
               "leads/visao-geral",
