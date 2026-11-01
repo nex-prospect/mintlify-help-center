@@ -69,6 +69,7 @@
             "pages": [
               "agentes/visao-geral",
               "agentes/gerenciar",
+              "agentes/construtor",
               "agentes/perfil",
               "agentes/treinamento",
               "agentes/configuracoes",
