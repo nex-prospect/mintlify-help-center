@@ -148,6 +148,13 @@
             "pages": ["agendamentos"]
           },
           {
+            "group": "Ligações",
+            "icon": "phone",
+            "pages": [
+              "ligacoes"
+            ]
+          },
+          {
             "group": "Organização",
             "icon": "building",
             "pages": [
@@ -164,13 +171,6 @@
               "creditos/creditos-api-oficial",
               "creditos/creditos-conversas",
               "creditos/adicionais-e-slots"
-            ]
-          },
-          {
-            "group": "Ligações",
-            "icon": "phone",
-            "pages": [
-              "ligacoes"
             ]
           }
         ]
