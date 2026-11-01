@@ -105,6 +105,7 @@
             "group": "Integrações",
             "icon": "plug",
             "pages": [
+              "integracoes/visao-geral",
               "integracoes/google-agenda"
             ]
           },
@@ -163,6 +164,11 @@
               "creditos/creditos-conversas",
               "creditos/adicionais-e-slots"
             ]
+          },
+          {
+            "group": "Ligações",
+            "icon": "phone",
+            "pages": []
           }
         ]
       }
