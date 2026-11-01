@@ -153,7 +153,8 @@
             "pages": [
               "organizacao/membros-e-convites",
               "organizacao/departamentos",
-              "organizacao/papeis-e-permissoes"
+              "organizacao/papeis-e-permissoes",
+              "organizacao/motivos-de-atendimento"
             ]
           },
           {
