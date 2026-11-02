@@ -37,12 +37,11 @@ icon: "chart-simple"
 ### Como atualizar os dados do painel
 
 - **Atualização automática** — o painel se atualiza sozinho. Clique em **Auto-atualização Ativada** para desligá-la se preferir controle manual.
-- **Atualização manual** — clique no botão **Atualizar** a qualquer momento para forçar uma nova leitura.
+- **Atualização manual** — clique no botão **Atualizar** a qualquer momento para forçar uma nova leitura. O horário da **Última atualização** aparece ao lado.
 
 <img
-  src="/images/image-99.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-monitor-topo.png"
+  alt="Painel de monitoramento com Última atualização, Atualizar, Auto-atualização Ativada e os indicadores Total na Fila, Taxa de Sucesso, Em Retry e Falhos destacados"
   style={{ width:"90%" }}
 />
 
@@ -59,37 +58,23 @@ O **Resumo de Performance** logo abaixo complementa com o total de leads **Compl
 
 A seção **Próximos Agendamentos** lista os disparos programados para as próximas horas. Quando não há envios previstos, exibe _"Nenhum envio agendado"_.
 
-<img
-  src="/images/image-101.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
 ### Como acompanhar o consumo do limite de envio
 
-A seção **Limite de Taxa** exibe uma barra de progresso com o uso atual do limite configurado, quantos leads restam no período e quando o limite será reiniciado.
-
-<img
-  src="/images/image-102.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+A seção **Limite de Taxa** exibe uma barra de progresso com o uso atual do limite configurado, quantos contatos restam no período e quando o limite será reiniciado.
 
 ## Como usar as abas de detalhamento
 
-### Fila de Leads
+### Fila de Contatos
 
-Exibe a lista de leads atualmente na fila da cadência.
+Exibe os contatos que estão (ou passaram) pela cadência, com a **etapa atual**, o **status** (ex.: Completo, Cancelado, Pausado), o **progresso** nas etapas e o **próximo disparo**.
 
-- Use o campo de busca para localizar um lead específico.
-- Use o filtro **Todos os Status** para segmentar por estado (pendente, ativo, falho etc.).
+- Use o campo de busca para localizar um contato específico.
+- Use o filtro **Todos os Status** para ver só um status.
+- Clique nos **três pontos (...)** de uma linha para ver as ações disponíveis para aquele contato.
 
 <img
-  src="/images/image-103.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-monitor-fila.png"
+  alt="Aba Fila de Contatos com a busca, o filtro Todos os Status e as colunas de etapa, status, progresso e próximo disparo destacados"
   style={{ width:"90%" }}
 />
 
@@ -98,25 +83,18 @@ Exibe a lista de leads atualmente na fila da cadência.
 Exibe os gráficos de histórico de envio:
 
 1. Clique na aba **Linha do Tempo**.
-2. Use o seletor de período (ex.: Últimos 7 dias) para ajustar o intervalo dos gráficos.
-3. Analise o volume de **Mensagens Enviadas vs Falhadas** e a **Taxa de Sucesso ao Longo do Tempo**.
-
-<img
-  src="/images/image-104.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+2. Escolha o período: **Hoje**, **7 dias** ou **30 dias**.
+3. Analise o volume de **Mensagens Enviadas vs Falhadas** e a **Taxa de Sucesso** ao longo do tempo.
 
 ### Eventos
 
-Exibe o log cronológico de todas as ações e alterações da cadência (ativação, edição, envios, erros).
+Exibe o registro cronológico do que aconteceu na cadência — por exemplo, contato cancelado, cadência desativada, envios e erros.
 
-- Use o filtro **Todos os Tipos** para segmentar por tipo de evento.
+- Use o filtro **Todos os Tipos** para ver só um tipo de evento.
+- Clique em **Ver detalhes** para abrir as informações completas de um evento.
 
 <img
-  src="/images/image-105.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-monitor-eventos.png"
+  alt="Aba Eventos com o filtro Todos os Tipos e o botão Ver detalhes destacados"
   style={{ width:"90%" }}
 />

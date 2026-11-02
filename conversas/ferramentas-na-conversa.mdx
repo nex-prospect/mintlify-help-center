@@ -141,4 +141,37 @@ Clique em **\+ Novo atalho** para criar mensagens rápidas com texto pronto — 
 
 ## Indicador de controle
 
-Quando a IA está pausada e você está respondendo, aparece o aviso **Você no controle** acima da barra de mensagens. Com a IA ativa, o aviso não aparece.
+Acima da barra de mensagens aparece quem está respondendo:
+
+- **IA respondendo · Assumir** — o agente de IA está atendendo. Clique em **Assumir** para pausar a IA e responder você mesmo.
+- **Você no controle** — a IA está pausada e você está respondendo.
+
+---
+
+## Janela de 24 horas fechada (API Oficial)
+
+Nos canais de **API Oficial**, a Meta só permite mensagens livres até **24 horas depois da última mensagem do contato**. Passado esse prazo, a barra de mensagens mostra **Janela fechada** e o campo de texto fica bloqueado. Para retomar a conversa, envie um **template aprovado**:
+
+<img
+  src="/images/tutorial/conversas-janela-fechada.png"
+  alt="Barra de mensagens com o aviso Janela fechada e o botão Selecionar template destacados"
+  style={{ width:"90%" }}
+/>
+
+1. Clique em **Selecionar template**.
+2. Escolha o template na lista.
+3. Se o template tiver variáveis, preencha cada **Parâmetro** (ex.: `{{1}}`) escolhendo uma variável, como o nome do contato.
+4. Confira a **Prévia** à direita.
+5. Clique em **Enviar template**.
+
+<img
+  src="/images/tutorial/conversas-enviar-template.png"
+  alt="Janela de envio de template com a lista de templates, o campo Parâmetro, a prévia e o botão Enviar template destacados"
+  style={{ width:"90%" }}
+/>
+
+Quando o contato responder, a janela de 24 horas abre de novo e você pode voltar a escrever normalmente.
+
+<Info>
+  O envio de template consome [Créditos de API Oficial](/creditos/creditos-api-oficial) conforme a categoria do template. Ainda não tem templates? Veja [Como criar um Template Oficial da Meta](/canais/criar-template-meta).
+</Info>

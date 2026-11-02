@@ -163,7 +163,8 @@
             "group": "Ligações",
             "icon": "phone",
             "pages": [
-              "ligacoes"
+              "ligacoes",
+              "ligacoes/configuracoes"
             ]
           },
           {
@@ -185,6 +186,11 @@
               "creditos/creditos-telefonia",
               "creditos/adicionais-e-slots"
             ]
+          },
+          {
+            "group": "Minha Conta",
+            "icon": "user",
+            "pages": []
           }
         ]
       }
