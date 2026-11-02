@@ -113,7 +113,12 @@
             "icon": "plug",
             "pages": [
               "integracoes/visao-geral",
-              "integracoes/google-agenda"
+              "integracoes/google-agenda",
+              "integracoes/webhooks",
+              "integracoes/rd-station",
+              "integracoes/clinicas",
+              "integracoes/api-e-mcp",
+              "integracoes/ferramentas-dos-agentes"
             ]
           },
           {
