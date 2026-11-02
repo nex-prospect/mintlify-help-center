@@ -37,7 +37,9 @@
           },
           {
             "group": "Lea — Copiloto Comercial",
-            "pages": []
+            "pages": [
+              "lea"
+            ]
           },
           {
             "group": "Dashboard",
