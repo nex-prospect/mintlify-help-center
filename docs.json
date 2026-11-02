@@ -190,7 +190,11 @@
           {
             "group": "Minha Conta",
             "icon": "user",
-            "pages": []
+            "pages": [
+              "conta/perfil",
+              "conta/notificacoes",
+              "conta/privacidade"
+            ]
           }
         ]
       }
