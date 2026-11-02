@@ -86,6 +86,7 @@
               "canais/conectar-whatsapp-nao-oficial",
               "canais/conectar-api-oficial-numero-novo",
               "canais/conectar-api-oficial-coexistencia",
+              "canais/configurar-canal",
               "canais/criar-template-meta",
               "canais/comprar-slots"
             ]
