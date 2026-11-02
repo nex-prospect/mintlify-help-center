@@ -7,26 +7,24 @@ icon: "sliders"
 
 Ao abrir uma conversa, você tem acesso às ferramentas para controlar o atendimento, gerenciar o contato e enviar mensagens. Elas ficam na barra superior e na barra de mensagens, na parte de baixo da conversa.
 
-🎥 **Prefere assistir?** Veja o tutorial em vídeo:
-
-<iframe className="w-full aspect-video rounded-xl border border-gray-200 dark:border-gray-800" src="https://www.tella.tv/video/ferramentas-na-conversa-59xq/embed" allowFullScreen />
-
 ---
 
 ## Barra superior
 
+<img
+  src="/images/tutorial/conversas-cabecalho.png"
+  alt="Barra superior da conversa com status, canal, IA Pausada, Limpar Sessão e menu de três pontos destacados"
+  style={{ width:"100%" }}
+/>
+
+Na barra superior ficam o nome e o telefone do contato, o **status** atual (ex.: Em atividade), o **canal** pelo qual a conversa está sendo respondida, o controle de **IA**, o botão **Limpar Sessão** e o menu de **três pontos (⋮)**.
+
 ### IA Ativa / IA Pausada
 
-O controle de IA, no canto superior direito da conversa, define se o agente de IA responde aquele contato automaticamente.
+O controle de IA define se o agente de IA responde aquele contato automaticamente.
 
 - **IA Ativa** — o agente responde sozinho.
 - **IA Pausada** — o agente para de responder e você assume a conversa.
-
-<img
-  src="/images/image-79.png"
-  alt="Controle de IA na conversa"
-  style={{ width:"90%" }}
-/>
 
 <Tip>
   Pause a IA quando quiser assumir pessoalmente — por exemplo, para fechar uma negociação ou tratar um caso sensível. Você também pode usar o atalho **`/ia`** na barra de mensagens.
@@ -36,36 +34,68 @@ O controle de IA, no canto superior direito da conversa, define se o agente de I
 
 **Limpar Sessão** apaga a memória que a IA tem da conversa atual. Depois disso, o agente recomeça do zero, sem lembrar do que foi dito.
 
-<img
-  src="/images/image-80.png"
-  alt="Botão Limpar Sessão"
-  style={{ width:"90%" }}
-/>
-
 <Warning>
   A memória apagada não pode ser recuperada. As mensagens na tela continuam lá — só a memória do agente é limpa.
 </Warning>
 
-### Menu de opções (⋮)
+### Menu de opções (⋮) da conversa
 
-O ícone de **três pontos** abre ações rápidas para o contato da conversa:
-
-- **Ver contato** — abre o perfil completo, com dados, tags e histórico.
-- **Agendar reunião** — abre o agendamento para esse contato.
-- **Trocar tag** e **Trocar status** — atualizam o contato sem sair da conversa.
-- **Arquivar / finalizar atendimento** — tira a conversa da lista principal. Ela continua disponível no filtro **Arquivadas**.
-- **Bloquear número** — impede que o número envie novas mensagens. Para desbloquear, use a mesma opção.
-- **Excluir** — exclui a conversa permanentemente.
+Clique nos **três pontos** no canto superior direito da conversa para abrir as ações do atendimento:
 
 <img
-  src="/images/download-(20).png"
-  alt="Menu de opções da conversa"
-  style={{ width:"90%" }}
+  src="/images/tutorial/conversas-menu-opcoes.png"
+  alt="Menu de três pontos da conversa com Ver contato, Agendar reunião, Trocar canal, Trocar atendimento, Motivo do atendimento, Finalizar atendimento, Trocar etiqueta, Trocar status, Bloquear número e Excluir"
+  style={{ width:"60%" }}
+/>
+
+| Opção | O que faz |
+| --- | --- |
+| **Ver contato** | Abre o perfil completo do contato, com dados, tags e histórico. |
+| **Agendar reunião** | Abre o agendamento para esse contato. |
+| **Trocar canal** | Escolhe por qual número (canal) a conversa será respondida. |
+| **Trocar atendimento** | Transfere o atendimento para outra pessoa do time, sem perder o histórico. Use a busca para encontrar a pessoa. |
+| **Motivo do atendimento** | Classifica a conversa com um motivo (ex.: dúvida, suporte, venda). Os motivos são cadastrados em [Motivos de atendimento](/organizacao/motivos-de-atendimento). Sem motivo, a conversa fica como **Sem classificação**. |
+| **Finalizar atendimento** | Encerra o atendimento como **Resolvido** ou **Encerrado sem resolução**. |
+| **Trocar etiqueta** | Adiciona ou remove tags do contato. |
+| **Trocar status** | Muda o status do contato (ex.: Backlog, Reunião agendada, Em atividade, Interagindo, Sem resultado). |
+| **Bloquear número** | Impede que o número envie novas mensagens. Para desbloquear, use a mesma opção. |
+| **Excluir** | Exclui a conversa permanentemente. |
+
+As opções com seta (**›**) abrem um submenu. Para voltar ao menu principal, clique na seta **‹** no topo do submenu.
+
+<img
+  src="/images/tutorial/conversas-submenus.png"
+  alt="Submenus Trocar canal, Trocar atendimento, Motivo do atendimento, Finalizar atendimento e Trocar status"
+  style={{ width:"100%" }}
+/>
+
+<Tip>
+  Use **Finalizar atendimento** junto com **Motivo do atendimento** para que os relatórios mostrem por que os contatos procuraram o time e como cada atendimento terminou.
+</Tip>
+
+### Menu de três pontos na lista de conversas
+
+Na lista à esquerda, cada conversa também tem um menu de **três pontos** com ações rápidas, sem precisar abrir a conversa:
+
+- **Marcar como lida** — tira o contador de mensagens não lidas.
+- **Arquivar conversa** — tira a conversa da lista principal. Ela continua disponível no filtro **Arquivadas**.
+- **Apagar conversa** — exclui a conversa permanentemente.
+
+<img
+  src="/images/tutorial/conversas-menu-lista.png"
+  alt="Menu de três pontos de uma conversa na lista com Marcar como lida, Arquivar conversa e Apagar conversa"
+  style={{ width:"40%" }}
 />
 
 ---
 
 ## Barra de mensagens
+
+<img
+  src="/images/tutorial/conversas-barra-mensagens.png"
+  alt="Barra de mensagens com o aviso Você no controle, anexos, emoji, atalhos e microfone destacados"
+  style={{ width:"100%" }}
+/>
 
 ### 📎 Anexos
 
@@ -111,10 +141,4 @@ Clique em **\+ Novo atalho** para criar mensagens rápidas com texto pronto — 
 
 ## Indicador de controle
 
-Quando a IA está pausada e você está respondendo, aparece o aviso **"Você está no controle da conversa"** na parte de baixo. Com a IA ativa, o aviso não aparece.
-
-<img
-  src="/images/image-85.png"
-  alt="Aviso Você está no controle da conversa"
-  style={{ width:"90%" }}
-/>
+Quando a IA está pausada e você está respondendo, aparece o aviso **Você no controle** acima da barra de mensagens. Com a IA ativa, o aviso não aparece.
