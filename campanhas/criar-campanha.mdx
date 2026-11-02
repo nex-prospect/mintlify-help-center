@@ -5,126 +5,141 @@ description: "As 4 etapas guiadas para definir público, mensagem, revisar e age
 icon: "paper-plane"
 ---
 
-Criar uma campanha envolve 4 etapas guiadas: definir o público, escolher a mensagem, revisar e agendar o disparo. Um **Resumo da Campanha** no lado direito da tela é atualizado em tempo real conforme você avança.
+Criar uma campanha envolve 4 etapas guiadas: **Público**, **Mensagem**, **Revisão** e **Disparo**. O **Resumo da Campanha**, no lado direito da tela, é atualizado em tempo real conforme você avança.
 
 <Warning>
-  Antes de começar, certifique-se de ter ao menos um **template aprovado pela Meta** no canal que deseja usar. Sem isso, não será possível concluir a criação.
+  Antes de começar, você precisa de um canal **WhatsApp API Oficial** conectado e de ao menos um **template aprovado pela Meta** nesse canal. Veja [Como criar um Template Oficial da Meta](/canais/criar-template-meta).
 </Warning>
-
-🎥 **Prefere assistir?** Veja o tutorial em vídeo:
-
-<iframe className="w-full aspect-video rounded-xl border border-gray-200 dark:border-gray-800" src="https://www.tella.tv/video/como-criar-campanhas-e-disparos-em-massa-9i53/embed" allowFullScreen />
 
 ---
 
 ## Como acessar
 
-Na tela de **Campanhas**, clique no botão **\+ Nova campanha** no canto superior direito.
-
-## Etapa 1 — Público
-
-Nesta etapa você define o nome da campanha e escolhe quais leads receberão a mensagem.
-
-**Nome da campanha** _(obrigatório)_ Dê um nome claro e identificável para encontrar a campanha depois. Exemplo: `Promoção de Julho`, `Reativação - Inativos 30 dias`.
-
-**Filtrar público** Use os filtros para segmentar os leads que farão parte da campanha:
-
-- **Busca** — encontre leads específicos pelo nome ou telefone.
-- **Etapa** — filtre por estágio do lead: Em atividade, Interagindo, Sem resultado, Backlog ou Reunião agendada.
-- **Tags** — filtre por etiquetas aplicadas, como: Novo Registro, Comprou, Cliente, Inativo 7/14/30/60 dias, Não chamar.
-
-Após aplicar os filtros, a lista exibirá os leads elegíveis com nome, telefone e etapa atual. Você pode:
-
-- **Selecionar todos (50)** — seleciona os primeiros 50 leads da lista visível.
-- **Selecionar todos do filtro (N)** — seleciona todos os leads que correspondem ao filtro aplicado.
-- Marcar leads individualmente pelas checkboxes.
-
-O contador à direita mostra quantos leads estão selecionados e quantos são elegíveis no filtro.
-
-<Tip>
-  Filtre por etapa e tags para segmentar o público certo antes de disparar. Quanto mais preciso o público, melhor o resultado da campanha.
-</Tip>
+**Para acessar:** Menu lateral → Campanhas → botão **\+ Nova campanha** (canto superior direito)
 
 <img
-  src="/images/image-134.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/campanhas-lista.png"
+  alt="Tela Campanhas com os indicadores do mês, as abas Histórico, Agendadas e Rascunhos e o botão Nova campanha destacado"
   style={{ width:"90%" }}
 />
 
-Clique em **Avançar** quando terminar, ou em **Salvar rascunho** para continuar depois.
+---
+
+## Etapa 1 — Público
+
+Defina o nome da campanha e escolha quem vai receber a mensagem.
+
+1. Preencha o **Nome da campanha** _(obrigatório)_. Use um nome fácil de achar depois, como `Promoção de Julho` ou `Reativação - Inativos 30 dias`.
+2. Filtre o público:
+   - **Busca** — encontra contatos pelo nome ou telefone.
+   - **Etapa** — filtra pelo status do contato (ex.: Em atividade, Interagindo, Sem resultado, Backlog, Reunião agendada).
+   - **Tags** — filtra pelas etiquetas aplicadas (ex.: Cliente, Inativo 30 dias, Não chamar).
+   - **Etapa do funil** — filtra pela etapa em que o contato está no [Pipeline](/pipeline/visao-geral).
+3. Selecione os destinatários:
+   - **Selecionar todos (50)** — marca os contatos visíveis na página.
+   - **Selecionar todos do filtro (N)** — marca todos os contatos que atendem aos filtros.
+   - Ou marque contatos individualmente pelas caixas de seleção.
+4. Confira no **Resumo da Campanha** quantos contatos foram selecionados e clique em **Avançar**.
+
+<img
+  src="/images/tutorial/campanhas-publico.png"
+  alt="Etapa Público com o nome da campanha, os filtros Etapa, Tags e Etapa do funil, os botões de seleção e o Resumo da Campanha destacados"
+  style={{ width:"90%" }}
+/>
+
+<Tip>
+  Combine **Etapa**, **Tags** e **Etapa do funil** para chegar no público certo. Quanto mais preciso o público, melhor o resultado — e menor o custo.
+</Tip>
+
+---
 
 ## Etapa 2 — Mensagem
 
-Aqui você define qual canal enviará a mensagem e qual template será usado.
+Escolha o canal e o template que será enviado.
 
-**Canal (API Oficial)** Selecione o canal de API Oficial pelo qual a campanha será disparada. Somente canais de API Oficial Meta aparecem nesta etapa.
-
-**Template aprovado** Escolha um dos templates aprovados pela Meta disponíveis para o canal selecionado. Somente templates com status **Aprovado** aparecem na lista.
-
-<Warning>
-  Se não houver templates disponíveis, clique em **Gerenciar templates em Canais** para criar e enviar um para aprovação. O prazo é de 24 a 48 horas.
-</Warning>
-
-<Tip>
-  Só templates aprovados pela Meta podem ser disparados na API Oficial.
-</Tip>
+1. Em **Canal (API Oficial)**, selecione o número que fará o disparo. Só aparecem canais de API Oficial.
+2. Escolha um **template aprovado**. Cada template mostra a sua categoria — **UTILITY** (utilidade) ou **MARKETING** — e a categoria influencia o custo do disparo.
+3. Confira a **Prévia** da mensagem à direita.
 
 <img
-  src="/images/image-154.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/campanhas-mensagem.png"
+  alt="Etapa Mensagem com o canal API Oficial, a lista de templates com a categoria e a prévia destacados"
   style={{ width:"90%" }}
+/>
+
+<Warning>
+  Se não houver template disponível, clique em **Gerenciar templates em Canais** para criar um e enviar para aprovação. A Meta costuma responder em até 24–48 horas.
+</Warning>
+
+### Preencher as variáveis do template
+
+Se o template tiver variáveis (como `{{1}}`), a seção **Variáveis** aparece abaixo da lista. Para cada variável, escolha:
+
+- **Campo do contato** — usa um dado de cada destinatário, como **Nome do contato**. Assim cada pessoa recebe a mensagem personalizada.
+- **Texto fixo** — o mesmo texto para todos os destinatários.
+
+<img
+  src="/images/tutorial/campanhas-variaveis.png"
+  alt="Seção Variáveis com a variável 1 configurada como Campo do contato, Nome do contato"
+  style={{ width:"70%" }}
 />
 
 Clique em **Avançar** para continuar.
 
+---
+
 ## Etapa 3 — Revisão
 
-Nesta etapa você confere um resumo completo da campanha e define o agendamento:
+Confira o resumo antes de disparar:
 
 - Nome da campanha
-- Quantidade de leads no público
-- Canal selecionado
-- Template que será enviado
-- Custo estimado (em créditos API Oficial)
-
-<Warning>
-  Será debitado **1 crédito API Oficial por destinatário** no disparo.
-</Warning>
-
-**Agendamento** Escolha quando a campanha será enviada:
-
-- **Enviar agora** — a campanha é disparada imediatamente após a confirmação.
-- **Agendar** — escolha uma data e horário futuros para o envio automático.
-
-Revise todos os dados e, se tudo estiver correto, clique em **Avançar**.
+- Público (quantidade de destinatários)
+- Canal e template selecionados
+- **Custo estimado** em créditos API Oficial
 
 <img
-  src="/images/image-155.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/campanhas-revisao.png"
+  alt="Etapa Revisão com o resumo da campanha, o custo estimado em créditos API Oficial e as opções Enviar agora e Agendar destacados"
   style={{ width:"90%" }}
 />
+
+<Info>
+  O custo é calculado **por destinatário** e depende da **categoria do template** (utilidade costuma custar menos que marketing). O valor exato aparece no **Custo estimado** antes do disparo. Veja [Créditos API Oficial](/creditos/creditos-api-oficial).
+</Info>
+
+**Agendamento** — escolha quando a campanha sai:
+
+- **Enviar agora** — dispara assim que você confirmar.
+- **Agendar** — informe a data e o horário no campo que aparece; o envio acontece automaticamente.
+
+<Warning>
+  Depois de disparada, a campanha **não pode ser desfeita**. Revise público, template e variáveis antes de seguir.
+</Warning>
+
+Clique em **Avançar** para ir à confirmação.
+
+---
 
 ## Etapa 4 — Disparo
 
-Confirmação final antes do envio. Clique em **Disparar campanha** para confirmar. A campanha aparecerá na aba **Histórico** (se disparada agora) ou **Agendadas** (se agendada para o futuro).
+Última tela antes do envio. Confira as informações e clique em **Disparar campanha**.
 
-<img
-  src="/images/image-156.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+- Se você escolheu **Enviar agora**, a campanha aparece na aba **Histórico**.
+- Se você escolheu **Agendar**, ela aparece na aba **Agendadas** até a data do envio.
+
+Para acompanhar entregas, leituras e respostas, veja [Gerenciar Campanhas](/campanhas/gerenciar).
+
+---
 
 ## Salvar como rascunho
 
-Em qualquer etapa do processo, você pode clicar em **Salvar rascunho** para pausar e retomar depois. Rascunhos ficam disponíveis na aba **Rascunhos** da tela de Campanhas.
+Em qualquer etapa você pode clicar em **Salvar rascunho** e terminar depois. Para retomar:
+
+1. Na tela de Campanhas, abra a aba **Rascunhos**.
+2. Clique em **Continuar** na campanha desejada.
 
 <img
-  src="/images/image-157.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/campanhas-rascunhos.png"
+  alt="Aba Rascunhos com o botão Continuar destacado"
   style={{ width:"90%" }}
 />

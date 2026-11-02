@@ -1,59 +1,89 @@
 ---
 title: "Conversas — Lista e Filtros"
 sidebarTitle: "Lista e Filtros"
-description: "Acompanhe e gerencie todas as interações ativas dos seus leads em tempo real."
+description: "Encontre, filtre e inicie conversas com seus contatos em tempo real."
 icon: "list"
 ---
 
-A aba **Conversas** é onde você acompanha e gerencia todas as interações ativas dos seus leads em tempo real.
+A aba **Conversas** é onde você acompanha e gerencia, em tempo real, todas as conversas de WhatsApp com seus contatos — tanto as atendidas pelos agentes de IA quanto as atendidas pelo seu time.
+
+**Para acessar:** Menu lateral → Conversas
 
 🎥 **Prefere assistir?** Veja o tutorial em vídeo:
 
 <iframe className="w-full aspect-video rounded-xl border border-gray-200 dark:border-gray-800" src="https://www.tella.tv/video/aprenda-a-utilizar-os-filtros-da-aba-de-conversas-2cfy/embed" allowFullScreen />
 
+<img
+  src="/images/tutorial/conversas-busca-e-filtros.png"
+  alt="Botão + Nova, busca e filtros da aba Conversas"
+  style={{ width:"60%" }}
+/>
+
 ---
 
 ## Como iniciar uma nova conversa manualmente
 
-Clique no botão **\+ Nova** no canto superior direito da lista de conversas.
+1. Clique em **\+ Nova**, no topo da lista de conversas.
+2. Em **Contato**, selecione o contato com quem quer falar.
+3. Em **Canal**, escolha o número de WhatsApp que vai enviar a mensagem.
+4. Clique em **Iniciar conversa**.
+
+<img
+  src="/images/tutorial/conversas-nova-conversa.png"
+  alt="Janela Nova conversa com os campos Contato e Canal"
+  style={{ width:"70%" }}
+/>
+
+<Note>
+  Pela API Oficial do WhatsApp, a primeira mensagem para um contato que não falou com você nas últimas 24 horas precisa ser um **template aprovado pela Meta**. Veja [Como criar um Template Oficial da Meta](/canais/criar-template-meta).
+</Note>
 
 ---
 
 ## Como buscar uma conversa
 
-Digite o nome ou número do lead no campo **Buscar conversa...**. A lista filtra em tempo real conforme você digita.
+Digite o nome ou o telefone do contato no campo **Buscar conversa...**. A lista é filtrada enquanto você digita, e a busca funciona com ou sem acentos — "joao" encontra "João".
+
+---
 
 ## Como filtrar conversas
 
-Clique em qualquer filtro abaixo da barra de busca para abrir o menu de opções e selecione o valor desejado:
+Clique em qualquer filtro abaixo da busca e selecione o valor desejado. Os filtros podem ser combinados.
 
-- **Status** — filtra pelo estágio atual do lead (Em atividade, Interagindo, Sem resultado, Backlog, Reunião agendada).
-- **Tags** — filtra por etiquetas aplicadas aos leads.
-- **Canais** — filtra por canal de origem, útil para ver apenas conversas de um número específico de WhatsApp.
-- **Departamento** — filtra por departamento atribuído ao atendimento.
-- **Responsável** — filtra por membro da equipe responsável pela conversa.
-- **IA** — filtra pelo estado do assistente (ativa ou pausada). Use para ver rapidamente quais leads estão em atendimento manual.
+| Filtro | O que faz |
+| --- | --- |
+| **Status** | Mostra conversas de contatos em um status específico (ex.: Interagindo, Reunião agendada) |
+| **Tags** | Mostra conversas de contatos com determinadas tags |
+| **Canais** | Mostra apenas as conversas de um número de WhatsApp |
+| **Departamento** | Mostra conversas atribuídas a um departamento |
+| **Responsável** | Mostra conversas de um membro específico do time |
+| **Não lidas** | Mostra só conversas com mensagens que ainda não foram abertas |
+| **Aguardando atendimento** | Mostra contatos que estão esperando a resposta de uma pessoa do time |
+| **Arquivadas** | Mostra as conversas finalizadas/arquivadas |
+| **IA** | Separa conversas com **IA Ativa** (agente respondendo) e **IA Inativa** (atendimento humano) |
 
-Os filtros podem ser combinados. Por exemplo: Status "Interagindo" \+ Canal "Vendas" exibe apenas os leads sendo atendidos pelo canal de vendas.
+Quando um filtro está aplicado, ele fica destacado com o número de seleções. Para remover, clique nele de novo e desmarque a opção.
 
-Para remover um filtro, clique nele novamente e desmarque a seleção.
+<Tip>
+  Combine **Aguardando atendimento** + **Responsável** para que cada pessoa do time veja só a própria fila.
+</Tip>
 
-<img
-  src="/images/image-74.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"58%" }}
-/>
+---
 
 ## O que aparece na lista de conversas
 
-Cada linha exibe o nome do lead, a última mensagem recebida ou enviada e o status atual do lead (ex.: **Interagindo**, **Backlog**, **Em atividade**). O número total de conversas aparece ao lado do título **Conversas**.
+Cada item mostra o nome do contato, a última mensagem enviada ou recebida, o horário, o número de mensagens não lidas e o status atual. O total de conversas aparece ao lado do título **Conversas**. Clique em uma conversa para abrir o histórico completo e as ferramentas de atendimento — veja [Ferramentas na Conversa](/conversas/ferramentas-na-conversa).
+
+### Ações rápidas na lista
+
+Clique nos **três pontos** de uma conversa na lista para:
+
+- **Marcar como lida** — tira o contador de mensagens não lidas.
+- **Arquivar conversa** — tira a conversa da lista principal. Para vê-la de novo, use o filtro **Arquivadas**.
+- **Apagar conversa** — exclui a conversa permanentemente.
 
 <img
-  src="/images/image-75.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"57%" }}
+  src="/images/tutorial/conversas-menu-lista.png"
+  alt="Menu de três pontos de uma conversa na lista com Marcar como lida, Arquivar conversa e Apagar conversa"
+  style={{ width:"40%" }}
 />
-
-Clique em qualquer conversa para abri-la e ver o histórico completo de mensagens.

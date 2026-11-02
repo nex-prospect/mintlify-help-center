@@ -1,56 +1,75 @@
 ---
 title: "Agentes — Gerenciar"
 sidebarTitle: "Gerenciar Agentes"
-description: "Edite, ative, duplique, exclua e filtre os agentes da sua conta."
+description: "Crie a partir de um modelo, edite, ative, duplique, exclua e filtre os agentes da sua conta."
 icon: "list-check"
 hidden: true
 ---
 
-Ações disponíveis na lista de agentes, além da criação — edição, ativação, duplicação, exclusão, busca e compra de slots.
+Na tela **Agentes** você vê todos os agentes de IA da conta e tem as ações para criar, editar, ativar, duplicar e excluir.
 
 **Para acessar:** Menu lateral → Agentes
+
+<img
+  src="/images/tutorial/agentes-lista.png"
+  alt="Tela Agentes com contador, Adicionar Agente, modelos prontos, filtros e menu de ações"
+  style={{ width:"100%" }}
+/>
+
+---
+
+## Como criar um agente a partir de um modelo
+
+Na faixa **Comece com um modelo**, escolha um modelo pronto (ex.: **SDR de IA**, **Agência de Marketing**, **Clínica Estética**, **Clínica Médica**, **Clínica Odontológica**). Use as setas à direita para ver mais modelos. O agente é criado já com perfil e instruções do segmento — depois é só ajustar.
+
+Para começar do zero:
+
+1. Clique em **\+ Adicionar Agente**.
+2. Preencha o **Nome** do agente e, se quiser, uma **Descrição** do propósito dele.
+3. Ligue **Definir como assistente padrão** se ele deve ser o agente padrão da conta.
+4. Clique em **Criar Agente**. Em seguida, configure-o pelo [Construtor](/agentes/construtor) ou pelas abas.
+
+<img
+  src="/images/tutorial/agentes-criar-novo.png"
+  alt="Janela Criar Novo Assistente com Nome, Descrição e Definir como assistente padrão"
+  style={{ width:"55%" }}
+/>
 
 ---
 
 ## Como editar um agente
 
-1. Localize o agente na lista.
-2. Clique no ícone `...` ao lado dele → **Editar**.
-3. Navegue pelas abas **Perfil**, **Treinamento**, **Configurações**, **Ferramentas** e **Follow-up** para ajustar cada área.
+1. Clique no nome do agente na lista, ou no ícone `...` → **Editar**.
+2. Navegue pelas abas **Construtor**, **Perfil**, **Treinamento**, **Configurações**, **Ferramentas** e **Follow-up**.
+3. Clique em **Salvar Alterações**.
+
+<img
+  src="/images/tutorial/agentes-abas.png"
+  alt="Abas do agente e botões Ativo e Salvar Alterações"
+  style={{ width:"100%" }}
+/>
+
+<Tip>
+  Quer ajustar o agente conversando, sem mexer campo por campo? Use a aba [Construtor](/agentes/construtor).
+</Tip>
 
 ---
 
-## Como ativar ou desativar um agente
+## Ações do menu `...`
 
-1. Clique no ícone `...` ao lado do agente.
-2. Clique em **Ativo** para ativar, ou **Desativado** para pausá-lo sem excluí-lo.
+<img
+  src="/images/tutorial/agentes-menu-acoes.png"
+  alt="Menu de ações do agente: Editar, Duplicar, Definir como Padrão, Ativar/Desativar e Excluir"
+  style={{ width:"40%" }}
+/>
 
-Um agente desativado não responde a novas conversas.
-
----
-
-## Como definir o agente padrão da conta
-
-1. Clique no ícone `...` ao lado do agente desejado.
-2. Clique em **Definir como Padrão**.
-
-O agente padrão exibe a badge **Padrão** na lista e é usado quando nenhum agente específico está vinculado a um lead ou canal.
-
----
-
-## Como duplicar um agente
-
-1. Clique no ícone `...` ao lado do agente.
-2. Clique em **Duplicar agente**.
-
-Uma cópia exata será criada como inativa — edite-a antes de ativar.
-
----
-
-## Como excluir um agente
-
-1. Clique no ícone `...` ao lado do agente.
-2. Clique em **Excluir agente**.
+| Ação | O que faz |
+| --- | --- |
+| **Editar** | Abre as abas de configuração do agente |
+| **Duplicar agente** | Cria uma cópia do agente, que você pode ajustar antes de ativar |
+| **Definir como Padrão** | O agente padrão (badge **Padrão**) é usado quando nenhum agente específico está vinculado ao contato ou ao canal |
+| **Ativar / Desativar** | Liga ou pausa o agente sem excluí-lo. Um agente desativado não responde a novas conversas |
+| **Excluir agente** | Remove o agente permanentemente |
 
 <Warning>
   A exclusão é permanente e não pode ser desfeita.
@@ -60,12 +79,12 @@ Uma cópia exata será criada como inativa — edite-a antes de ativar.
 
 ## Como filtrar e buscar agentes
 
-- Use o campo **Buscar agentes** para localizar pelo nome.
-- Clique em **\+ Criador** para filtrar por usuário criador.
-- Clique em **\+ Status** para filtrar por agentes ativos ou desativados.
+- Use **Buscar agentes...** para localizar pelo nome.
+- Clique em **\+ Criador** para filtrar por quem criou o agente.
+- Clique em **\+ Status** para ver só os ativos ou só os desativados.
 
 ---
 
-## Como comprar mais slots de agente
+## Limite de agentes do plano
 
-O plano controla quantos agentes podem estar ativos simultaneamente. O contador no topo exibe **Ativos: X/Y · Total: X/Y**. Quando precisar aumentar o limite, clique em **\+ Comprar mais**.
+O contador no topo mostra **Ativos: X/Y · Total: X/Y**, ou seja, quantos agentes estão ligados e quantos existem em relação ao limite do seu plano. Para aumentar o limite, veja [Créditos & Plano](/creditos/adicionais-e-slots).

@@ -36,6 +36,12 @@
             "pages": ["introduction"]
           },
           {
+            "group": "Lea — Copiloto Comercial",
+            "pages": [
+              "lea"
+            ]
+          },
+          {
             "group": "Dashboard",
             "icon": "chart-line",
             "pages": [
@@ -69,6 +75,7 @@
             "pages": [
               "agentes/visao-geral",
               "agentes/gerenciar",
+              "agentes/construtor",
               "agentes/perfil",
               "agentes/treinamento",
               "agentes/configuracoes",
@@ -85,6 +92,7 @@
               "canais/conectar-whatsapp-nao-oficial",
               "canais/conectar-api-oficial-numero-novo",
               "canais/conectar-api-oficial-coexistencia",
+              "canais/configurar-canal",
               "canais/criar-template-meta",
               "canais/comprar-slots"
             ]
@@ -104,11 +112,17 @@
             "group": "Integrações",
             "icon": "plug",
             "pages": [
-              "integracoes/google-agenda"
+              "integracoes/visao-geral",
+              "integracoes/google-agenda",
+              "integracoes/webhooks",
+              "integracoes/rd-station",
+              "integracoes/clinicas",
+              "integracoes/api-e-mcp",
+              "integracoes/ferramentas-dos-agentes"
             ]
           },
           {
-            "group": "Leads",
+            "group": "Contatos",
             "icon": "users",
             "pages": [
               "leads/visao-geral",
@@ -146,12 +160,21 @@
             "pages": ["agendamentos"]
           },
           {
+            "group": "Ligações",
+            "icon": "phone",
+            "pages": [
+              "ligacoes",
+              "ligacoes/configuracoes"
+            ]
+          },
+          {
             "group": "Organização",
             "icon": "building",
             "pages": [
               "organizacao/membros-e-convites",
               "organizacao/departamentos",
-              "organizacao/papeis-e-permissoes"
+              "organizacao/papeis-e-permissoes",
+              "organizacao/motivos-de-atendimento"
             ]
           },
           {
@@ -160,7 +183,17 @@
             "pages": [
               "creditos/creditos-api-oficial",
               "creditos/creditos-conversas",
+              "creditos/creditos-telefonia",
               "creditos/adicionais-e-slots"
+            ]
+          },
+          {
+            "group": "Minha Conta",
+            "icon": "user",
+            "pages": [
+              "conta/perfil",
+              "conta/notificacoes",
+              "conta/privacidade"
             ]
           }
         ]
