@@ -54,6 +54,7 @@
             "pages": [
               "conversas/visao-geral",
               "conversas/lista-e-filtros",
+              "conversas/detalhes-do-contato",
               "conversas/ferramentas-na-conversa"
             ]
           },
