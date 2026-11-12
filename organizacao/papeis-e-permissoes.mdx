@@ -17,20 +17,46 @@ A plataforma inclui três papéis de sistema que não podem ser excluídos:
 
 | Papel | Descrição | Permissões |
 |-------|-----------|------------|
-| **OWNER** | Dono da conta. Acesso total e exclusivo (transferir titularidade, cancelar conta). | 38 |
-| **ADMIN** | Gestor operacional. Pode tudo, exceto ações exclusivas do dono. | 38 |
-| **OPERATOR** | Atendente padrão. Opera leads dos seus departamentos. | 12 |
+| **OWNER** | Dono da conta. Acesso total e ações exclusivas (transferir titularidade, cancelar conta). | 51 |
+| **ADMIN** | Gestor operacional. Pode tudo, exceto as ações exclusivas do dono. | 50 |
+| **OPERATOR** | Atendente padrão. Opera os contatos dos seus departamentos. | 16 |
+
+Na coluna **Ações** de cada papel você encontra o cadeado (papel de sistema, bloqueado para edição), **Duplicar** e **Excluir**.
+
+<img
+  src="/images/tutorial/papeis-lista.png"
+  alt="Janela Papéis e Permissões com o botão Criar Papel e as ações de cada papel destacados"
+  style={{ width:"60%" }}
+/>
 
 ---
 
 ## Criar um papel customizado
 
-1. Clique em **+ Criar Papel**
-2. Defina o **nome** e a **descrição** do papel
-3. Selecione as **permissões** que deseja conceder
-4. Salve o papel
+1. Clique em **\+ Criar Papel**.
+2. Preencha o **Nome** (ex.: "Supervisor de Vendas") e, se quiser, uma **Descrição** do que o papel pode fazer.
+
+<img
+  src="/images/tutorial/papeis-criar-form.png"
+  alt="Janela Criar Novo Papel com os campos Nome, Descrição e a lista de Permissões"
+  style={{ width:"70%" }}
+/>
+
+3. Em **Permissões**, abra cada grupo e marque o que o papel pode fazer. Use **Marcar todas** para liberar o grupo inteiro. Os grupos são: Assistants, Cadências, Configuração, Contatos, Contatos e Conversas, Notificações, Programa de parceiros, Pipeline (Negócios), Relatórios e Ligações.
+4. Ao lado de cada grupo aparece quantas permissões estão marcadas (ex.: **2 de 4**), e o painel **Resumo** mostra tudo o que o papel poderá fazer.
+5. Clique em **Criar**.
+
+<img
+  src="/images/tutorial/papeis-permissoes.png"
+  alt="Grupo Contatos aberto com permissões marcadas e o botão Criar destacado"
+  style={{ width:"70%" }}
+/>
 
 Papéis customizados podem ser duplicados, editados e excluídos conforme necessário.
+
+<Tip>
+  Para começar a partir de um papel existente, clique em **Duplicar** na linha dele e ajuste as permissões da cópia.
+</Tip>
 
 ---
 

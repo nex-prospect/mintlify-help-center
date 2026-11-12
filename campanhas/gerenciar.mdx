@@ -1,39 +1,85 @@
 ---
 title: "Campanhas — Gerenciar"
 sidebarTitle: "Gerenciar Campanhas"
-description: "Acompanhe métricas e localize campanhas por status."
+description: "Acompanhe métricas, veja os detalhes de cada disparo e retome rascunhos."
 icon: "list-check"
 hidden: true
 ---
 
-Ações disponíveis depois de criar campanhas — acompanhamento de métricas e localização por status.
+Depois de criar campanhas, é na tela de Campanhas que você acompanha os resultados, abre os detalhes de cada disparo e retoma rascunhos.
 
 **Para acessar:** Menu lateral → Campanhas
 
 ---
 
-## Como acompanhar o desempenho das campanhas
+## Indicadores do mês
 
-O mini dashboard no topo da tela exibe as métricas consolidadas do período atual:
+O topo da tela mostra os números consolidados do mês:
 
-| Métrica | O que representa |
+| Indicador | O que representa |
 | --- | --- |
 | Disparos no mês | Total de mensagens disparadas no mês corrente |
-| Mensagens enviadas | Mensagens efetivamente entregues aos leads |
-| Taxa de leitura | Percentual de mensagens abertas pelos destinatários |
-| Taxa de resposta | Percentual de leads que responderam à campanha |
-| Conversões | Leads que realizaram a ação esperada após receber a mensagem |
+| Enviadas confirmadas | Mensagens aceitas pelo provedor (Meta) para envio |
+| Taxa de leitura | Percentual de mensagens lidas pelos destinatários |
+| Taxa de resposta | Percentual de destinatários que responderam |
+| Conversões | Destinatários que avançaram após receber a campanha |
+
+<img
+  src="/images/tutorial/campanhas-lista.png"
+  alt="Tela Campanhas com os indicadores do mês e as abas Histórico, Agendadas e Rascunhos"
+  style={{ width:"90%" }}
+/>
 
 ---
 
 ## Como localizar uma campanha
 
-Use a barra de busca **Buscar campanhas...** para localizar pelo nome.
+- Use a busca **Buscar campanhas...** para encontrar pelo nome.
+- Alterne entre as abas:
+  - **Histórico** — campanhas já disparadas.
+  - **Agendadas** — campanhas com envio programado.
+  - **Rascunhos** — campanhas salvas e ainda não disparadas.
 
-A lista de campanhas está organizada em três abas:
+---
 
-- **Histórico** — campanhas já disparadas.
-- **Agendadas** — campanhas com data de envio futura.
-- **Rascunhos** — campanhas salvas mas ainda não finalizadas.
+## Ver os detalhes de uma campanha
 
-Clique na aba correspondente para filtrar a lista.
+1. Na aba **Histórico** (ou **Agendadas**), clique na campanha.
+2. O painel de detalhes abre com:
+   - **Status**, **canal**, **template** e **público elegível**.
+   - Indicadores da campanha, como **Enviadas confirmadas** e **Entregues**.
+   - A tabela **Destinatários**, com a situação de cada contato (paginada).
+
+<img
+  src="/images/tutorial/campanhas-detalhe.png"
+  alt="Painel de detalhes da campanha com status, canal, template, indicadores e a tabela de destinatários destacados"
+  style={{ width:"90%" }}
+/>
+
+<Info>
+  Se aparecer um alerta sobre **recibos**, significa que a Meta ainda não confirmou a entrega ou leitura de parte das mensagens. Os números se atualizam conforme as confirmações chegam.
+</Info>
+
+### Como medimos
+
+Dentro do painel, a seção **Como medimos** explica cada indicador da campanha — por exemplo, a diferença entre mensagem **enviada confirmada** (aceita pela Meta), **entregue** (chegou ao aparelho) e **lida**.
+
+<img
+  src="/images/tutorial/campanhas-como-medimos.png"
+  alt="Seção Como medimos com as definições de cada indicador da campanha"
+  style={{ width:"90%" }}
+/>
+
+---
+
+## Retomar um rascunho
+
+1. Abra a aba **Rascunhos**.
+2. Clique em **Continuar** na campanha.
+3. O assistente reabre na etapa em que você parou. Veja [Como criar uma nova campanha](/campanhas/criar-campanha).
+
+<img
+  src="/images/tutorial/campanhas-rascunhos.png"
+  alt="Aba Rascunhos com o botão Continuar destacado"
+  style={{ width:"90%" }}
+/>

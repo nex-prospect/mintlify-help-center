@@ -26,12 +26,12 @@ Na seção **Comportamento do Modelo**, mova o slider **Temperatura** entre **de
   style={{ width:"90%" }}
 />
 
-- Valores baixos (próximos a 0.2) — respostas mais previsíveis e consistentes.
-- Valores altos (próximos a 0.8) — respostas mais variadas e criativas.
+- Valores baixos (próximos a 0,2) — respostas mais previsíveis e consistentes.
+- Valores altos (próximos a 0,8) — respostas mais variadas e criativas.
 
 ## Como configurar o tempo de espera antes de responder (Debounce)
 
-Mova o slider **Tempo de Espera (Debounce)** para definir quantos segundos o agente aguarda antes de responder. Isso permite agrupar várias mensagens enviadas em sequência pelo lead em uma única resposta — evitando respostas fragmentadas.
+Mova o slider **Tempo de Espera (Debounce)** para definir quantos segundos o agente aguarda antes de responder. Isso permite agrupar várias mensagens enviadas em sequência pelo contato em uma única resposta — evitando respostas fragmentadas.
 
 <img
   src="/images/image-49.png"
@@ -42,7 +42,7 @@ Mova o slider **Tempo de Espera (Debounce)** para definir quantos segundos o age
 
 ## Como fazer o agente aguardar a cadência antes de responder
 
-Ative o toggle **Aguardar Cadência**. Quando ativado, o agente espera o primeiro disparo da cadência antes de responder às mensagens do lead.
+Ative o toggle **Aguardar Cadência**. Quando ativado, o agente espera o primeiro disparo da cadência antes de responder às mensagens do contato.
 
 <img
   src="/images/image-50.png"
@@ -67,12 +67,29 @@ Na seção **Configurações de Segmentação**, ajuste:
 
 ## Como configurar os horários de atendimento
 
-1. Na seção **Horários de Atendimento**, ative o toggle ao lado de cada dia da semana em que o agente deve responder.
-2. Para cada dia ativo, defina o **horário de início** e o **horário de término**.
-3. Use o botão **Copiar de seg** para replicar o horário da segunda-feira para todos os dias ativos.
-4. Ajuste o **fuso horário** conforme necessário (padrão: `America/Sao_Paulo`).
+Com o toggle de **Horários de Atendimento** desligado, o agente funciona em **Atendimento 24/7** — responde a qualquer hora, todos os dias.
 
-Fora do intervalo configurado, o agente não envia mensagens automaticamente.
+<img
+  src="/images/tutorial/agentes-horarios-atendimento.png"
+  alt="Seção Horários de Atendimento com o toggle e o aviso Atendimento 24/7"
+  style={{ width:"75%" }}
+/>
+
+Para limitar os horários:
+
+1. Ligue o toggle de **Horários de Atendimento**.
+2. Ative cada dia da semana em que o agente deve responder.
+3. Para cada dia ativo, defina o **horário de início** e o **horário de término**.
+4. Use **Copiar de seg** para replicar o horário da segunda-feira para os outros dias ativos.
+5. Ajuste o **fuso horário** se necessário (padrão: `America/Sao_Paulo`).
+
+Fora do intervalo configurado, o agente não responde automaticamente.
+
+<Tip>
+  O Dashboard mostra o alerta **Agente sem horário de atendimento** quando um agente está sem horários definidos. Se o agente deve atender 24/7, é só manter o toggle desligado.
+</Tip>
+
+As mensagens que chegam fora do expediente aparecem no Dashboard, aba **Atendimento**, em **Fora do horário**.
 
 <img
   src="/images/image-52.png"
@@ -83,7 +100,7 @@ Fora do intervalo configurado, o agente não envia mensagens automaticamente.
 
 ## Como ajustar o histórico de mensagens
 
-Mova o slider **Histórico de Mensagens** para definir quantas mensagens ficam visíveis na aba **Conversas**. O padrão recomendado é `50`. Valores mais altos aumentam o volume exibido, mas podem causar lentidão.
+Mova o slider **Histórico de Mensagens** (de 1 a 200) para definir quantas mensagens anteriores da conversa o agente considera ao responder. O padrão recomendado é `50`. Valores mais altos dão mais contexto ao agente, mas deixam as respostas mais lentas.
 
 <img
   src="/images/image-53.png"
@@ -92,18 +109,17 @@ Mova o slider **Histórico de Mensagens** para definir quantas mensagens ficam v
   style={{ width:"90%" }}
 />
 
-## Como configurar a voz do agente (ElevenLabs)
+## Como configurar a voz do agente
 
 Na seção **Integrações → Voz do Agente**:
 
-1. Selecione o **Modelo ElevenLabs** — determina a qualidade e velocidade da geração de áudio.
-2. Selecione a **Voz** — clique no botão de áudio para ouvir uma prévia antes de salvar.
+1. Use o toggle **Responder em áudio neste agente** para ligar ou desligar os áudios **só deste agente**. Desligado, o agente não gera nem envia áudios em conversas, follow-ups e cadências — os outros agentes não são afetados.
+2. Em **Voz**, selecione a voz que o agente vai usar. Clique no botão de áudio para ouvir uma prévia antes de salvar.
 
 <img
-  src="/images/image-55.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
+  src="/images/tutorial/agentes-voz-responder-audio.png"
+  alt="Seção Voz do Agente com o toggle Responder em áudio neste agente e o seletor de Voz"
+  style={{ width:"75%" }}
 />
 
 <Note>

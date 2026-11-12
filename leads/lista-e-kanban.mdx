@@ -1,104 +1,110 @@
 ---
-title: "Leads — Lista e Kanban"
+title: "Contatos — Lista e Kanban"
 sidebarTitle: "Lista e Kanban"
-description: "Visualize e gerencie sua base de contatos em modo Lista ou Kanban."
+description: "Visualize, busque, filtre e gerencie sua base de contatos em modo Lista ou Kanban."
 icon: "table-list"
 ---
 
-A tela de **Leads** exibe todos os contatos da sua base e oferece dois modos de visualização: **Lista** e **Kanban**. Use a barra de busca e os filtros para encontrar leads específicos rapidamente.
+A tela **Contatos** (antiga tela de Leads) mostra todos os contatos da sua base, com dois modos de visualização: **Lista** e **Kanban**.
+
+**Para acessar:** Menu lateral → Contatos
 
 🎥 **Prefere assistir?** Veja o tutorial em vídeo:
 
 <iframe className="w-full aspect-video rounded-xl border border-gray-200 dark:border-gray-800" src="https://www.tella.tv/video/leads-lista-e-kanban-0wp3/embed" allowFullScreen />
 
+<img
+  src="/images/tutorial/contatos-lista.png"
+  alt="Tela Contatos com busca, Filtros, Lista/Kanban, Gerenciar, Novo Contato e menu de ações"
+  style={{ width:"100%" }}
+/>
+
 ---
 
-## Como buscar um lead
+## Como buscar um contato
 
-Digite o nome ou telefone do lead no campo **Buscar Leads** — a lista filtra em tempo real conforme você digita.
+Digite o nome ou o telefone no campo **Buscar Contatos**. A lista é filtrada enquanto você digita.
 
-<img
-  src="/images/image-161.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+---
 
-## Como filtrar leads por status ou tag
+## Como filtrar contatos
 
-- Clique em **\+ Filtrar por status** e selecione a etapa desejada (Em atividade, Interagindo, Sem resultado, Backlog, Reunião agendada).
-- Clique em **\+ Filtrar por tags** e selecione as etiquetas desejadas.
-
-Os dois filtros podem ser combinados ao mesmo tempo.
+Clique em **Filtros** e escolha um ou mais critérios:
 
 <img
-  src="/images/image-158.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
+  src="/images/tutorial/contatos-filtros.png"
+  alt="Menu Filtros com Status, Tags, Departamento, Responsável, Canal, Recebidos em e UTM"
+  style={{ width:"40%" }}
 />
+
+| Filtro | Use para |
+| --- | --- |
+| **Status** | Ver contatos em uma etapa (Em atividade, Interagindo, Sem resultado, Backlog, Reunião agendada) |
+| **Tags** | Ver contatos com determinadas tags |
+| **Departamento** | Ver contatos de um departamento |
+| **Responsável** | Ver contatos de um membro do time |
+| **Canal** | Ver contatos atribuídos a um número de WhatsApp específico |
+| **Recebidos em** | Ver contatos que chegaram em um período |
+| **UTM** | Ver contatos por origem de campanha (utm_source, utm_campaign etc.) |
+
+Os filtros podem ser combinados.
+
+---
 
 ## Como alternar entre Lista e Kanban
 
-Clique em **Lista** ou **Kanban** na barra superior para alternar entre os dois modos.
-
-<img
-  src="/images/image-159.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
-## Como abrir o painel de detalhes de um lead
-
-Na visualização em **Lista**, clique no nome do lead. Um painel lateral se abrirá à direita com informações detalhadas, divididas em: **Contato**, **Campos Personalizados**, **Atendimento**, **Tags** e **Resumo da conversa**.
-
-<img
-  src="/images/image-160.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
-## Como alterar o status de um lead direto na lista
-
-Na coluna **Etapa** da visualização em Lista, clique no dropdown ao lado do status atual do lead e selecione o novo status. A mudança é aplicada imediatamente sem precisar abrir o painel de detalhes.<br />
-
-<img
-  src="/images/image-162.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
-## O que cada coluna da lista significa
-
-| Coluna | O que exibe |
-| --- | --- |
-| Nome | Nome do lead |
-| Telefone | Número de contato |
-| Etapa | Status atual com dropdown para alteração rápida |
-| Tags | Etiquetas aplicadas ao lead |
-| Sessão | Estado do assistente (Ativa, Inativa ou Pausada) |
-| Criado em | Data de cadastro |
-| Ações | Ícone `...` com ações rápidas |
-
-<img
-  src="/images/image-163.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
-## Como usar a visualização Kanban
-
-No modo **Kanban**, cada coluna representa uma etapa do funil. Cada card exibe o nome do lead, empresa, tags, status da sessão e o tempo desde a última interação.
-
-Para mover um lead de etapa, arraste o card para a coluna de destino.
+Clique em **Lista** ou **Kanban** no topo da tela. No **Kanban**, cada coluna é um status; para mudar o status de um contato, arraste o card para a coluna de destino.
 
 <img
   src="/images/image-164.png"
-  alt="Image"
-  title="Image"
+  alt="Visualização Kanban de contatos"
   style={{ width:"90%" }}
 />
+
+---
+
+## Como adicionar contatos
+
+Clique na seta de **\+ Novo Contato** e escolha:
+
+- **Adicionar Contato Individual** — veja [Adicionar contato individual](/leads/adicionar-individual).
+- **Importar Contatos em Massa** — veja [Importar em massa](/leads/importar-em-massa).
+
+---
+
+## Como gerenciar tags, status e campos
+
+Clique em **Gerenciar** e escolha **Tags**, **Status** ou **Campos** para criar e editar essas opções. Veja [Gerenciar tags, status e campos](/leads/gerenciar-tags-status-campos).
+
+---
+
+## Como abrir o perfil de um contato
+
+Na **Lista**, clique no nome do contato. Um painel lateral abre com **Contato**, **Campos Personalizados**, **Atendimento**, **Tags** e **Resumo da conversa**. Veja [Perfil do contato](/leads/perfil-do-lead).
+
+---
+
+## Como alterar o status direto na lista
+
+Na coluna **Etapa**, clique no status atual e selecione o novo. A mudança é aplicada na hora.
+
+---
+
+## Ações em massa e exportação
+
+Marque a caixa de seleção de um ou mais contatos (ou a do cabeçalho, para selecionar todos) para abrir as ações em massa: aplicar tags, trocar status, criar negócios no Pipeline, excluir ou **exportar** a lista. Na exportação, você escolhe quais colunas e **campos personalizados** entram no arquivo.
+
+---
+
+## O que cada coluna significa
+
+| Coluna | O que exibe |
+| --- | --- |
+| Nome | Nome do contato |
+| Telefone | Número do contato (inclusive internacionais) |
+| Etapa | Status atual, com troca rápida |
+| Tags | Tags aplicadas |
+| Responsável | Membro do time responsável pelo contato |
+| Sessão | Estado do agente para o contato (Ativa, Inativa ou Pausada) |
+| Criado em | Data de cadastro |
+| Ações | Menu `...` com ações rápidas |

@@ -1,189 +1,123 @@
 ---
 title: "Cadências — Editar uma Cadência"
 sidebarTitle: "Editar uma Cadência"
-description: "Configure filtros de entrada, agente, horários, etapas e mensagens de uma cadência."
+description: "Configure filtros de entrada, agente, horários, limite de envio, canais e etapas de uma cadência."
 icon: "pen"
 ---
 
-**Para acessar:** Cadências → ícone `...` ao lado da cadência → Editar
+**Para acessar:** Menu lateral → Cadência → clique no nome da cadência → botão **Editar**
 
 <Warning>
-  A cadência precisa estar **Inativa** para ser editada. Se estiver ativa, pause-a primeiro pelo menu `...` antes de abrir a edição.
+  A cadência precisa estar **Inativa** para ser editada. Se estiver ativa, desligue o toggle **Ativa** no topo da página da cadência antes de clicar em **Editar**.
 </Warning>
 
-🎥 **Prefere assistir?** Veja o tutorial em vídeo:
-
-<iframe className="w-full aspect-video rounded-xl border border-gray-200 dark:border-gray-800" src="https://www.tella.tv/video/como-editar-uma-cadencia-1-57w6/embed" allowFullScreen />
+O editor é dividido em seções que abrem e fecham com a seta à direita: **Filtros**, **Agente**, **Entrega**, **Agendamento**, **Controle de Envio**, **Formatação de Variáveis**, **Canais de Envio** e **Etapas da Cadência**. Para renomear a cadência, clique no nome dela no topo.
 
 ---
 
 ## Como configurar os filtros de entrada
 
-Os filtros definem quais leads podem entrar ou permanecer na cadência.
-
-**Tags Requeridas:**
-
-1. No campo de busca da seção **Tags Requeridas**, procure a tag desejada.
-2. Clique na tag para selecioná-la.
-3. Repita para adicionar quantas tags forem necessárias.
+Os filtros definem quais contatos podem entrar (ou continuar) na cadência.
 
 <img
-  src="/images/image-199.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-editar-filtros.png"
+  alt="Seção Filtros com Tags Requeridas, Status Requerido e Etapas do funil destacados"
   style={{ width:"90%" }}
 />
+
+**Tags Requeridas** — busque a tag no campo **Pesquisar tags...** e clique para adicioná-la.
 
 <Note>
-  O lead precisa ter **exatamente** as tags selecionadas — se tiver qualquer tag adicional, será descartado da cadência.
+  O contato precisa ter **exatamente** o conjunto de tags selecionado. Se tiver qualquer tag adicional, é descartado da cadência.
 </Note>
 
-**Status Requerido:**
+**Status Requerido** — clique nos status desejados. Os selecionados aparecem como chips logo abaixo; clique no **x** para remover.
 
-1. Clique nos status desejados para selecioná-los.
-2. Os status selecionados aparecem como chips abaixo das opções.
+**Etapas do funil** — escolha as etapas do [Pipeline](/pipeline/gerenciar) em que o contato precisa ter um negócio. Esse filtro vale só na entrada: quem já está na cadência continua mesmo se o negócio mudar de etapa.
 
-<img
-  src="/images/image-198.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+Abaixo dos filtros, a Leavo mostra quantos **contatos elegíveis** existem com essa combinação (incluindo contatos que já podem estar em outras cadências).
+
+---
 
 ## Como trocar o agente vinculado
 
-1. Na seção **Agente**, clique no campo que exibe o nome do agente atual.
-2. Selecione o agente desejado na lista.
+1. Abra a seção **Agente** e escolha o agente na lista.
+2. Use o toggle **IA responde aos contatos** para definir o comportamento depois do disparo:
+   - **Ativado** — quando o contato responde, o agente assume a conversa automaticamente.
+   - **Desativado** — a cadência envia as mensagens, mas a sessão do contato é pausada em seguida, sem respostas automáticas.
 
-**IA responde aos leads** — controla o comportamento pós-disparo:
+<Tip>
+  Se o agente não tiver follow-up configurado, a página da cadência mostra um aviso. Veja [Follow-up](/agentes/follow-up).
+</Tip>
 
-- **Ativado** — após o lead interagir com a primeira mensagem, o agente responde automaticamente.
-- **Desativado** — a cadência envia as mensagens, mas a sessão do lead é pausada logo em seguida, sem respostas automáticas.
-
-Clique no toggle para alternar entre os dois modos.
-
-<img
-  src="/images/image-197.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+---
 
 ## Como configurar dias e horários de envio
 
-1. Na seção **Entrega**, ative o toggle ao lado de cada dia da semana desejado.
-2. Para cada dia ativo, defina o **horário de início** e o **horário de término**.
-3. Dias desativados não terão envios naquele período.
-
-<br />**Fuso horário:** clique no seletor de fuso para alterar o horário de referência. Padrão: `Horário de Brasília (GMT-3)`.
-
 <img
-  src="/images/image-196.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-editar-entrega.png"
+  alt="Seção Entrega com os dias da semana, horários, Aplicar a todos e Fuso Horário destacados"
   style={{ width:"90%" }}
 />
+
+1. Na seção **Entrega**, marque os dias da semana em que a cadência pode enviar.
+2. Para cada dia marcado, defina o horário de início e de término.
+3. Para usar o mesmo horário em todos os dias, ajuste um deles e clique em **Aplicar a todos**.
+4. Em **Fuso Horário**, escolha o horário de referência (padrão: Horário de Brasília (GMT-3)).
+
+Mensagens só são enviadas nos dias e horários selecionados.
+
+---
 
 ## Como agendar o início dos envios
 
-1. Na seção **Agendamento**, clique no campo de data e hora.
-2. Defina a data e hora de início programado.
+Abra a seção **Agendamento** e defina a data e a hora de início. Quando não configurado, aparece **Sem agendamento** e os envios começam assim que a cadência for ativada.
 
-Quando não configurado, exibe **Sem agendamento** — os envios começam assim que a cadência for ativada.
+---
+
+## Como limitar a quantidade de contatos por período
 
 <img
-  src="/images/image-195.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-editar-controle.png"
+  alt="Seção Controle de Envio com Ativar controle de limite de envio e Máximo de Leads destacados"
   style={{ width:"90%" }}
 />
 
-## Como limitar a quantidade de leads por período
+1. Na seção **Controle de Envio**, marque **Ativar controle de limite de envio**.
+2. Escolha o **Tipo de Limite** (ex.: Diário).
+3. Defina o **Máximo de Leads** que podem entrar na cadência no período. Use `0` para ilimitado.
 
-1. Na seção **Controle de Envio**, marque o checkbox **Ativar controle de limite de envio**.
-2. Selecione o **Tipo de Limite** (ex.: Diário).
-3. Defina o **Máximo de Leads** — número máximo que pode entrar no período. Use `0` para ilimitado.
+Quando o limite é atingido, os novos contatos ficam pendentes até o próximo período.
 
-Quando o limite é atingido, novos leads ficam pendentes até o próximo período.
-
-<img
-  src="/images/image-189.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+---
 
 ## Como configurar o formato das variáveis
 
-Na seção **Formatação de Variáveis**, ajuste:
+Na seção **Formatação de Variáveis**, ajuste o **Idioma**, o **Formato de Data** (ex.: DD/MM/YYYY) e o **Formato de Hora** (ex.: 24h (14:30)) usados nas variáveis das mensagens.
 
-- **Idioma** — afeta variáveis de texto sensíveis a idioma.
-- **Formato de Data** — ex.: DD/MM/YYYY.
-- **Formato de Hora** — ex.: 24h (14:30).
+---
+
+## Como selecionar o canal de envio e montar as etapas
 
 <img
-  src="/images/image-190.png"
-  alt="Image"
-  title="Image"
+  src="/images/tutorial/cadencias-editar-etapas.png"
+  alt="Seções Canais de Envio e Etapas da Cadência com Adicionar Etapa, Intervalo e Adicionar mensagem destacados"
   style={{ width:"90%" }}
 />
 
-## Como selecionar o canal de envio
+**Canais de Envio** — escolha o canal de WhatsApp. A configuração vale para todas as etapas da cadência.
 
-Na seção **Canais de Envio**, clique no canal de WhatsApp desejado. A configuração se aplica a todas as etapas da cadência.
+**Etapas da Cadência** — cada etapa é uma fase da sequência e pode ter uma ou mais mensagens:
 
-<img
-  src="/images/image-191.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+1. Clique em **\+ Adicionar Etapa**.
+2. Em **Intervalo**, defina o tempo de espera antes da etapa (ex.: **Imediato**, 4 horas, 1 dia).
+3. Use as **setas** à esquerda para mudar a ordem da etapa, ou a **lixeira** para excluí-la.
+4. Clique em **\+ Adicionar mensagem** para incluir uma mensagem na etapa.
+5. Clique no **ícone de edição** da mensagem para definir o **Tipo** (ex.: Texto), o **Atraso** e o conteúdo, ou na **lixeira** para excluí-la.
 
-## Como gerenciar as etapas da cadência
-
-As etapas são as fases sequenciais — cada uma pode conter uma ou mais mensagens.
-
-**Adicionar uma etapa:**
-
-Clique em **\+ Adicionar Etapa** (no topo ou no final da lista).
-
-**Configurar uma etapa:**
-
-1. Clique no nome da etapa para renomeá-la.
-2. Ajuste o **Intervalo** — tempo de espera antes de enviar as mensagens desta etapa.
-3. Use as **setas de ordenação** para reposicionar a etapa na sequência.
-
-Clique no **ícone de lixeira** para excluir a etapa.
-
-<img
-  src="/images/image-192.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
-
-**Adicionar mensagens a uma etapa:**
-
-1. Dentro da etapa, clique em **\+ Adicionar mensagem**.
-2. Clique no **ícone de edição** ao lado da mensagem para abrir o editor.
-3. Defina o **Tipo** (ex.: Texto), o **Atraso** e o conteúdo da mensagem.
-4. Clique no **ícone de lixeira** para excluir uma mensagem.
-
-<img
-  src="/images/image-193.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+---
 
 ## Como salvar as alterações
 
-- **Salvar automaticamente** — ative o toggle no canto superior direito para salvar cada alteração em tempo real.
-- **Salvar manualmente** — clique no botão **Salvar** para confirmar todas as alterações de uma vez.
-
-<img
-  src="/images/image-194.png"
-  alt="Image"
-  title="Image"
-  style={{ width:"90%" }}
-/>
+- **Salvar automaticamente** — ligue o toggle no canto superior direito para salvar cada alteração na hora.
+- **Salvar manualmente** — clique em **Salvar** para confirmar todas as alterações de uma vez.
